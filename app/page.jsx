@@ -1,232 +1,100 @@
-const plans = [
-  {
-    name: "Plan Base",
-    price: "Consultar",
-    items: ["Sala de musculación", "Asesoramiento inicial", "Acceso según horario"],
-  },
-  {
-    name: "Plan Valkiria",
-    price: "Consultar",
-    featured: true,
-    items: ["Acceso completo", "Clases disponibles", "Seguimiento y comunidad"],
-  },
-  {
-    name: "Plan Full",
-    price: "Consultar",
-    items: ["Beneficios ampliados", "Mayor flexibilidad", "Soporte personalizado"],
-  },
-];
+import { pageMarkup } from "./page-content";
+import SiteScripts from "./site-scripts";
 
-const reviews = [
-  {
-    name: "Reseña Google",
-    rating: "★★★★★",
-    text: "Reemplazar por una reseña real verificada de Google Maps.",
-  },
-  {
-    name: "Reseña Google",
-    rating: "★★★★★",
-    text: "Reemplazar por una reseña real verificada de Google Maps.",
-  },
-  {
-    name: "Reseña Google",
-    rating: "★★★★★",
-    text: "Reemplazar por una reseña real verificada de Google Maps.",
-  },
-];
-
-const schedule = [
-  ["Lunes a Viernes", "Completar horario"],
-  ["Sábados", "Completar horario"],
-  ["Domingos", "Completar horario"],
-];
-
-const WHATSAPP_URL = "https://wa.me/549XXXXXXXXXX";
-const INSTAGRAM_URL = "https://instagram.com/REEMPLAZAR";
-const MAPS_URL = "https://maps.google.com/?q=REEMPLAZAR";
+const WHATSAPP_URL =
+  "https://wa.me/5491172357022?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20Valkiria.";
+const INSTAGRAM_URL = "https://www.instagram.com/gimnasio_valkiria/";
 
 export default function Home() {
   return (
-    <main>
-      <header className="nav-shell">
-        <nav className="nav container" aria-label="Navegación principal">
-          <a className="brand" href="#inicio" aria-label="Valkiria Gym - Inicio">
-            <span className="brand-mark">V</span>
-            <span>VALKIRIA</span>
-          </a>
+    <>
+      <a className="skip" href="#contenido">
+        Saltar al contenido
+      </a>
 
-          <div className="nav-links">
-            <a href="#nosotros">Sobre nosotros</a>
-            <a href="#instalaciones">Instalaciones</a>
-            <a href="#planes">Planes</a>
-            <a href="#horarios">Horarios</a>
-            <a href="#resenas">Reseñas</a>
-          </div>
+      <div className="preview">
+        PROPUESTA DE DISEÑO
+        <span>Identidad visual y contenido sujetos a aprobación</span>
+        <a href="briefing.html">Ver briefing ↗</a>
+      </div>
 
-          <a className="btn btn-small" href={WHATSAPP_URL} target="_blank" rel="noreferrer">
-            Contactar
-          </a>
+      <header>
+        <a className="brand" href="#" aria-label="Valkiria inicio">
+          <img
+            className="brand-logo"
+            src="/assets/logo-valk.png"
+            alt="VAK · Gimnasio femenino"
+            width="150"
+            height="150"
+          />
+        </a>
+        <nav aria-label="Principal">
+          <a href="#espacio">Sobre nosotros</a>
+          <a href="#planes">Clases</a>
+          <a href="#planes-mensuales">Planes mensuales</a>
+          <a href="#horarios">Horarios</a>
+          <a href="#visita">Cómo llegar</a>
         </nav>
+        <a className="navcta" href="#turno">
+          Pedí tu turno ↗
+        </a>
       </header>
 
-      <section id="inicio" className="hero">
-        <div className="hero-media" aria-hidden="true" />
-        <div className="hero-overlay" />
-        <div className="container hero-content">
-          <p className="eyebrow">VALKIRIA GYM</p>
-          <h1>Entrená fuerte.<br />Viví Valkiria.</h1>
-          <p className="hero-copy">
-            Un espacio pensado para superarte, entrenar con energía y formar parte de una comunidad que no para.
-          </p>
-          <div className="hero-actions">
-            <a className="btn" href={WHATSAPP_URL} target="_blank" rel="noreferrer">
-              Quiero entrenar
-            </a>
-            <a className="btn btn-ghost" href="#instalaciones">
-              Ver instalaciones
-            </a>
-          </div>
-        </div>
-      </section>
+      <main
+        id="contenido"
+        dangerouslySetInnerHTML={{ __html: pageMarkup }}
+      />
 
-      <section id="nosotros" className="section container split">
-        <div>
-          <p className="eyebrow">SOBRE NOSOTROS</p>
-          <h2>Más que un gimnasio.</h2>
-        </div>
-        <div className="body-copy">
-          <p>
-            Valkiria es un espacio de entrenamiento enfocado en fuerza, constancia y progreso.
-            Esta sección debe completarse con la historia real del gimnasio, su filosofía y lo que lo diferencia.
-          </p>
-          <p>
-            La web prioriza información clara, contacto rápido y una experiencia visual que represente el carácter del lugar.
-          </p>
-        </div>
-      </section>
-
-      <section id="instalaciones" className="section">
-        <div className="container section-heading">
-          <div>
-            <p className="eyebrow">INSTALACIONES</p>
-            <h2>Conocé el espacio.</h2>
-          </div>
-          <p>Reemplazá las imágenes por fotografías reales del gimnasio.</p>
-        </div>
-
-        <div className="gallery container">
-          {[1, 2, 3].map((item) => (
-            <figure className="gallery-card" key={item}>
-              <img
-                src={`/instalacion-${item}.jpg`}
-                alt={`Instalaciones de Valkiria Gym ${item}`}
-                loading="lazy"
-              />
-              <figcaption>Valkiria Gym</figcaption>
-            </figure>
-          ))}
-        </div>
-      </section>
-
-      <section className="quote-band" aria-label="Frase motivacional">
-        <p>NO ESPERES MOTIVACIÓN. CONSTRUÍ DISCIPLINA.</p>
-      </section>
-
-      <section id="planes" className="section container">
-        <div className="section-heading">
-          <div>
-            <p className="eyebrow">PLANES</p>
-            <h2>Elegí cómo empezar.</h2>
-          </div>
-          <p>Los nombres, precios y beneficios deben confirmarse antes de publicar.</p>
-        </div>
-
-        <div className="plans-grid">
-          {plans.map((plan) => (
-            <article className={`plan-card ${plan.featured ? "featured" : ""}`} key={plan.name}>
-              {plan.featured && <span className="badge">Más elegido</span>}
-              <h3>{plan.name}</h3>
-              <p className="price">{plan.price}</p>
-              <ul>
-                {plan.items.map((item) => <li key={item}>{item}</li>)}
-              </ul>
-              <a className="btn" href={WHATSAPP_URL} target="_blank" rel="noreferrer">
-                Consultar por WhatsApp
-              </a>
-            </article>
-          ))}
-        </div>
-      </section>
-
-      <section id="horarios" className="section alt">
-        <div className="container split">
-          <div>
-            <p className="eyebrow">HORARIOS</p>
-            <h2>Entrená cuando te quede mejor.</h2>
-          </div>
-          <div className="schedule">
-            {schedule.map(([day, time]) => (
-              <div className="schedule-row" key={day}>
-                <span>{day}</span>
-                <strong>{time}</strong>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section id="resenas" className="section container">
-        <div className="section-heading">
-          <div>
-            <p className="eyebrow">RESEÑAS</p>
-            <h2>Lo dicen quienes entrenan acá.</h2>
-          </div>
-          <p>Solo publicar opiniones reales y verificadas.</p>
-        </div>
-
-        <div className="reviews">
-          {reviews.map((review, index) => (
-            <article className="review-card" key={index}>
-              <span className="stars" aria-label="5 estrellas">{review.rating}</span>
-              <p>“{review.text}”</p>
-              <strong>{review.name}</strong>
-            </article>
-          ))}
-        </div>
-      </section>
-
-      <section className="section contact">
-        <div className="container contact-card">
-          <div>
-            <p className="eyebrow">EMPEZÁ HOY</p>
-            <h2>Tu próxima versión empieza acá.</h2>
-            <p>Consultá planes, horarios y disponibilidad.</p>
-          </div>
-          <div className="contact-actions">
-            <a className="btn" href={WHATSAPP_URL} target="_blank" rel="noreferrer">WhatsApp</a>
-            <a className="btn btn-ghost" href={INSTAGRAM_URL} target="_blank" rel="noreferrer">Instagram</a>
-            <a className="text-link" href={MAPS_URL} target="_blank" rel="noreferrer">Cómo llegar ↗</a>
-          </div>
-        </div>
-      </section>
-
-      <footer className="footer">
-        <div className="container footer-inner">
-          <div className="brand"><span className="brand-mark">V</span><span>VALKIRIA</span></div>
-          <p>© 2026 Valkiria Gym. Todos los derechos reservados.</p>
-          <p>Desarrollo web por Sebastián Roldán.</p>
-        </div>
+      <footer>
+        <a className="brand" href="#">
+          <img
+            className="brand-logo"
+            src="/assets/logo-valk.png"
+            alt="VAK · Gimnasio femenino"
+            width="150"
+            height="150"
+          />
+        </a>
+        <p>Tu fuerza empieza acá.</p>
+        <a href="briefing.html">Briefing y contenido pendiente ↗</a>
+        <small>Prototipo de presentación · Sin reservas ni cobros automáticos.</small>
       </footer>
 
-      <a
-        className="floating-whatsapp"
-        href={WHATSAPP_URL}
-        target="_blank"
-        rel="noreferrer"
-        aria-label="Contactar a Valkiria Gym por WhatsApp"
-      >
-        WA
-      </a>
-    </main>
+      <div className="floating-social">
+        <a
+          className="instagram-float"
+          href={INSTAGRAM_URL}
+          target="_blank"
+          rel="noopener"
+          aria-label="Abrir Instagram de Valkiria"
+        >
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="1.7"
+            aria-hidden="true"
+          >
+            <rect x="3" y="3" width="18" height="18" rx="5" />
+            <circle cx="12" cy="12" r="4" />
+            <circle cx="17.5" cy="6.5" r=".7" fill="currentColor" />
+          </svg>
+        </a>
+        <a
+          className="floating"
+          data-wa="Hola, quiero información sobre Valkiria."
+          href={WHATSAPP_URL}
+          aria-label="Consultar por WhatsApp"
+          target="_blank"
+          rel="noopener"
+        >
+          <svg viewBox="0 0 32 32" aria-hidden="true" fill="currentColor">
+            <path d="M16 .8A15.1 15.1 0 0 0 3 23.6L.9 31.1l7.7-2A15.1 15.1 0 1 0 16 .8Zm0 27.4a12.3 12.3 0 0 1-6.3-1.7l-.5-.3-4.5 1.2 1.2-4.4-.3-.5A12.4 12.4 0 1 1 16 28.2Zm6.8-9.3c-.4-.2-2.2-1.1-2.6-1.2-.3-.1-.6-.2-.8.2-.3.4-1 1.2-1.2 1.4-.2.2-.4.3-.8.1-.4-.2-1.6-.6-3-1.9-1.1-1-1.9-2.2-2.1-2.6-.2-.4 0-.6.2-.8l.6-.7.4-.6c.1-.2 0-.5 0-.7l-1.2-2.8c-.3-.7-.6-.6-.8-.6h-.7c-.3 0-.7.1-1 .5s-1.3 1.3-1.3 3.1 1.4 3.6 1.6 3.9c.2.2 2.7 4.1 6.6 5.8.9.4 1.6.6 2.2.8.9.3 1.7.2 2.3.1.7-.1 2.2-.9 2.5-1.8.3-.9.3-1.7.2-1.8-.1-.2-.4-.3-.8-.5Z" />
+          </svg>
+        </a>
+      </div>
+
+      <SiteScripts />
+    </>
   );
 }

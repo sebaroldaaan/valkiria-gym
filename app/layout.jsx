@@ -1,9 +1,10 @@
 import "./globals.css";
+import "./brand.css";
 
 export const metadata = {
-  title: "Valkiria Gym | Entrená diferente",
+  title: "Valkiria — Tu fuerza empieza acá",
   description:
-    "Valkiria Gym — entrenamiento, comunidad y energía. Conocé nuestras instalaciones, planes y horarios.",
+    "Un gimnasio femenino en Buenos Aires. Conocé Valkiria, consultá actividades y coordiná tu visita.",
 };
 
 export default function RootLayout({ children }) {
