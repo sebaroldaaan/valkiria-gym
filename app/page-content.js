@@ -170,6 +170,9 @@ export const pageMarkup = String.raw`<section class="hero">
 <a data-wa="Hola, quiero consultar por la clase de Cross." href="https://wa.me/5491172357022" target="_blank" rel="noopener">Consultar por Cross ↗</a>
 </article>
 <article>
+<div class="class-artwork">
+<img src="/assets/classes/gap-flyer.png" alt="Flyer de la clase GAP, martes y jueves a las 19:00" loading="lazy" decoding="async">
+</div>
 <span>02 — FUERZA</span>
 <h3>GAP</h3>
 <p>Una clase enfocada en glúteos, abdomen y piernas.</p>
@@ -177,6 +180,10 @@ export const pageMarkup = String.raw`<section class="hero">
 <a data-wa="Hola, quiero consultar por la clase de GAP." href="https://wa.me/5491172357022" target="_blank" rel="noopener">Consultar por GAP ↗</a>
 </article>
 <article>
+<div class="class-artwork class-artwork-dual">
+<img src="/assets/classes/salsa-flyer.png" alt="Flyer de la clase de Salsa con el profesor César, sábados a las 10:30" loading="lazy" decoding="async">
+<img src="/assets/classes/salsa-story.png" alt="Flyer vertical de Salsa con el profesor César" loading="lazy" decoding="async">
+</div>
 <span>03 — RITMO</span>
 <h3>Salsa</h3>
 <p>Sumate a bailar y entrenar al ritmo de la música.</p>

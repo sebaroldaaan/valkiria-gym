@@ -109,6 +109,139 @@ footer .brand-logo {
   gap: 20px;
 }
 
+.cards > article {
+  animation: class-card-enter 600ms both;
+  box-shadow: 0 12px 28px #17151a14;
+  transition:
+    transform 240ms ease,
+    box-shadow 240ms ease,
+    border-color 240ms ease;
+}
+
+.cards > article:nth-child(2) {
+  animation-delay: 80ms;
+}
+
+.cards > article:nth-child(3) {
+  animation-delay: 160ms;
+}
+
+.cards > article:nth-child(4) {
+  animation-delay: 240ms;
+}
+
+.cards > article:nth-child(5) {
+  animation-delay: 320ms;
+}
+
+.cards > article:nth-child(6) {
+  animation-delay: 400ms;
+}
+
+.cards > article:nth-child(7) {
+  animation-delay: 480ms;
+}
+
+.cards > article:hover {
+  transform: translateY(-7px);
+  border-color: var(--accent);
+  box-shadow: 0 22px 42px #17151a30;
+}
+
+.class-artwork {
+  position: relative;
+  aspect-ratio: 4 / 5;
+  margin-bottom: 22px;
+  overflow: hidden;
+  background: #17151a;
+}
+
+.class-artwork img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 450ms ease;
+}
+
+.cards > article:hover .class-artwork > img:first-child {
+  transform: scale(1.045);
+}
+
+.class-artwork-dual > img:nth-child(2) {
+  position: absolute;
+  right: 14px;
+  bottom: 14px;
+  width: 34%;
+  height: 58%;
+  border: 3px solid #f0eee8;
+  border-radius: 5px;
+  box-shadow: 0 8px 22px #0009;
+}
+
+.cards > article:hover .class-artwork-dual > img:nth-child(2) {
+  transform: translateY(-4px) rotate(2deg);
+}
+
+a,
+button {
+  transition:
+    color 200ms ease,
+    background-color 200ms ease,
+    border-color 200ms ease,
+    box-shadow 200ms ease,
+    transform 200ms ease;
+}
+
+a:hover,
+button:not(:disabled):hover {
+  transform: translateY(-2px);
+}
+
+.button:hover,
+.navcta:hover,
+.cards > article > a:hover,
+.social-links a:hover,
+.floating-social a:hover,
+button:not(:disabled):hover {
+  box-shadow: 0 8px 22px #d90b5540;
+}
+
+@keyframes class-card-enter {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cards > article {
+    animation: none;
+    transition: none;
+  }
+
+  .class-artwork img,
+  a,
+  button {
+    transition: none;
+  }
+
+  .cards > article:hover,
+  a:hover,
+  button:not(:disabled):hover {
+    transform: none;
+  }
+
+  .cards > article:hover .class-artwork img {
+    transform: none;
+  }
+}
+
 @media (max-width: 650px) {
   .brand-logo {
     width: 62px;
