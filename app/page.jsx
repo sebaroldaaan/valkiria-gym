@@ -12,12 +12,6 @@ export default function Home() {
         Saltar al contenido
       </a>
 
-      <div className="preview">
-        PROPUESTA DE DISEÑO
-        <span>Identidad visual y contenido sujetos a aprobación</span>
-        <a href="briefing.html">Ver briefing ↗</a>
-      </div>
-
       <header>
         <a className="brand" href="#" aria-label="Valkiria inicio">
           <img

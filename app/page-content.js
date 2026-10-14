@@ -8,9 +8,6 @@ export const pageMarkup = String.raw`<section class="hero">
 <canvas id="scene" aria-label="Ilustración 3D animada de una mancuerna, no representa equipamiento confirmado del gimnasio" role="img" width="684" height="688">
 </canvas>
 <div class="hero-copy">
-<p class="eyebrow">
-<span>
-</span> UN ESPACIO PARA VOS</p>
 <h1>Tu fuerza.<br>Tu ritmo.<br>
 <em>Tu lugar.</em>
 </h1>
@@ -19,12 +16,9 @@ export const pageMarkup = String.raw`<section class="hero">
 </a>
 <a class="textlink" href="#espacio">Conocé Valkiria ↓</a>
 </div>
-<div class="scene-label">01 / FUERZA EN MOVIMIENTO<small>Exploración visual · objeto 3D ilustrativo</small>
-</div>
-<button id="motion" aria-pressed="false">Pausar animación Ⅱ</button>
+<button id="motion" aria-pressed="false" hidden>Pausar animación Ⅱ</button>
 <div class="hero-bottom">
 <span>GIMNASIO FEMENINO / BUENOS AIRES</span>
-<span>HACÉ SCROLL PARA EXPLORAR ↓</span>
 </div>
 </section>
 <div class="ticker" aria-label="Fuerza, actitud, movimiento, vos">
@@ -50,7 +44,7 @@ export const pageMarkup = String.raw`<section class="hero">
 <b>✳</b>
 </div>
 </div>
-<button class="ticker-pause" type="button" aria-label="Pausar cinta de palabras" aria-pressed="false">Ⅱ</button>
+<button class="ticker-pause" type="button" aria-label="Pausar cinta de palabras" aria-pressed="false" hidden>Ⅱ</button>
 </div>
 <section class="section light facilities" id="instalaciones">
 <div class="section-top">
@@ -61,8 +55,7 @@ export const pageMarkup = String.raw`<section class="hero">
 <h2>Un lugar para<br>
 <em>ponerte en movimiento.</em>
 </h2>
-<p>Recorré nuestras instalaciones.<br>
-<small>Fotos de la ficha de Google Maps · 2023–2024.</small>
+<p>Recorré nuestras instalaciones.
 </p>
 </div>
 <div class="carousel" data-carousel="facilities" role="region" aria-roledescription="carrusel" aria-label="Instalaciones de Valkiria">
@@ -117,9 +110,9 @@ export const pageMarkup = String.raw`<section class="hero">
 </figure>
 </div>
 <div class="carousel-bar">
-<p class="carousel-position" aria-live="polite" aria-atomic="true">02 / 04</p>
+<p class="carousel-position" aria-live="polite" aria-atomic="true" hidden>02 / 04</p>
 <div>
-<button type="button" class="carousel-pause" aria-label="Pausar desplazamiento continuo" aria-pressed="false">Ⅱ</button>
+<button type="button" class="carousel-pause" aria-label="Pausar desplazamiento continuo" aria-pressed="false" hidden>Ⅱ</button>
 <button type="button" data-prev="" aria-label="Ver instalación anterior">←</button>
 <button type="button" data-next="" aria-label="Ver instalación siguiente">→</button>
 </div>
@@ -163,6 +156,9 @@ export const pageMarkup = String.raw`<section class="hero">
 </h2>
 <div class="cards">
 <article>
+<div class="class-artwork">
+<img src="/assets/classes/cross-flyer.png" alt="Flyer de la clase Cross, martes y jueves a las 10:00" loading="lazy" decoding="async">
+</div>
 <span>01 — FUERZA</span>
 <h3>Cross</h3>
 <p>Entrenamiento para trabajar fuerza y acondicionamiento físico.</p>
@@ -180,9 +176,8 @@ export const pageMarkup = String.raw`<section class="hero">
 <a data-wa="Hola, quiero consultar por la clase de GAP." href="https://wa.me/5491172357022" target="_blank" rel="noopener">Consultar por GAP ↗</a>
 </article>
 <article>
-<div class="class-artwork class-artwork-dual">
+<div class="class-artwork">
 <img src="/assets/classes/salsa-flyer.png" alt="Flyer de la clase de Salsa con el profesor César, sábados a las 10:30" loading="lazy" decoding="async">
-<img src="/assets/classes/salsa-story.png" alt="Flyer vertical de Salsa con el profesor César" loading="lazy" decoding="async">
 </div>
 <span>03 — RITMO</span>
 <h3>Salsa</h3>
@@ -203,13 +198,7 @@ export const pageMarkup = String.raw`<section class="hero">
 <a data-wa="Hola, quiero consultar por las clases de Zumba y sus horarios." href="https://wa.me/5491172357022" target="_blank" rel="noopener">Consultar por Zumba ↗</a>
 </article>
 <article>
-<span>06 — BIENESTAR</span>
-<h3>Yoga</h3>
-<p>Consultá opciones y horarios para encontrar tu momento de bienestar.</p>
-<a data-wa="Hola, quiero consultar por las clases de Yoga y sus horarios." href="https://wa.me/5491172357022" target="_blank" rel="noopener">Consultar por Yoga ↗</a>
-</article>
-<article>
-<span>07 — A TU RITMO</span>
+<span>06 — A TU RITMO</span>
 <h3>Entrenamiento libre</h3>
 <p>Usá el espacio para entrenar por tu cuenta. Consultá las condiciones de acceso.</p>
 <a data-wa="Hola, quiero consultar por el entrenamiento libre, sus condiciones y horarios." href="https://wa.me/5491172357022" target="_blank" rel="noopener">Consultar por acceso libre ↗</a>
@@ -228,24 +217,27 @@ export const pageMarkup = String.raw`<section class="hero">
 <p>Elegí la duración que mejor acompaña tu rutina.</p>
 </div>
 <div class="plan-options">
-<article class="plan-option">
+<a class="plan-option" data-wa="Hola, quiero elegir el plan de pase libre por 3 meses ($75.000). ¿Me pasan las condiciones?" href="https://wa.me/5491172357022?text=Hola%2C%20quiero%20elegir%20el%20plan%20de%20pase%20libre%20por%203%20meses%20%28%2475.000%29.%20%C2%BFMe%20pasan%20las%20condiciones%3F" target="_blank" rel="noopener">
 <span>01 — PASE LIBRE</span>
 <h3>3 meses</h3>
 <p>Precio final</p>
 <strong>$75.000</strong>
-</article>
-<article class="plan-option">
+<span class="plan-select">Elegir este plan ↗</span>
+</a>
+<a class="plan-option" data-wa="Hola, quiero elegir el plan de pase libre por 6 meses ($138.000). ¿Me pasan las condiciones?" href="https://wa.me/5491172357022?text=Hola%2C%20quiero%20elegir%20el%20plan%20de%20pase%20libre%20por%206%20meses%20%28%24138.000%29.%20%C2%BFMe%20pasan%20las%20condiciones%3F" target="_blank" rel="noopener">
 <span>02 — PASE LIBRE</span>
 <h3>6 meses</h3>
 <p>Precio final</p>
 <strong>$138.000</strong>
-</article>
-<article class="plan-option">
+<span class="plan-select">Elegir este plan ↗</span>
+</a>
+<a class="plan-option" data-wa="Hola, quiero elegir el plan de pase libre por 12 meses ($252.000). ¿Me pasan las condiciones?" href="https://wa.me/5491172357022?text=Hola%2C%20quiero%20elegir%20el%20plan%20de%20pase%20libre%20por%2012%20meses%20%28%24252.000%29.%20%C2%BFMe%20pasan%20las%20condiciones%3F" target="_blank" rel="noopener">
 <span>03 — PASE LIBRE</span>
 <h3>12 meses</h3>
 <p>Precio final</p>
 <strong>$252.000</strong>
-</article>
+<span class="plan-select">Elegir este plan ↗</span>
+</a>
 </div>
 <p class="plan-disclaimer">No acumulable con otros descuentos. Consultá por WhatsApp las condiciones vigentes del pase libre.</p>
 <a class="button plan-contact" data-wa="Hola, quiero consultar por los planes mensuales de pase libre y sus condiciones." href="https://wa.me/5491172357022" target="_blank" rel="noopener">Consultar planes por WhatsApp <b>↗</b></a>
@@ -290,7 +282,7 @@ export const pageMarkup = String.raw`<section class="hero">
 <span>Sábados</span>
 <strong>Salsa · 10:30</strong>
 </div>
-<p class="note">Consultá por WhatsApp los días y horarios de Step, Zumba, Yoga y entrenamiento libre.</p>
+<p class="note">Consultá por WhatsApp los días y horarios de Step, Zumba y entrenamiento libre.</p>
 </div>
 </div>
 </section>
@@ -379,9 +371,9 @@ export const pageMarkup = String.raw`<section class="hero">
 </article>
 </div>
 <div class="carousel-bar">
-<p class="carousel-position" aria-live="polite" aria-atomic="true">01 / 05</p>
+<p class="carousel-position" aria-live="polite" aria-atomic="true" hidden>01 / 05</p>
 <div>
-<button type="button" class="carousel-pause" aria-label="Pausar desplazamiento continuo" aria-pressed="false">Ⅱ</button>
+<button type="button" class="carousel-pause" aria-label="Pausar desplazamiento continuo" aria-pressed="false" hidden>Ⅱ</button>
 <button type="button" data-prev="" aria-label="Reseña anterior">←</button>
 <button type="button" data-next="" aria-label="Reseña siguiente">→</button>
 </div>

@@ -65,10 +65,26 @@ footer .brand-logo {
 }
 
 .plan-option {
+  display: block;
   padding: 30px;
   border: 1px solid #ffffff30;
   border-top: 3px solid var(--accent);
+  border-radius: 16px;
   background: #21171c;
+  box-shadow: 0 12px 28px #0002;
+  transition:
+    transform 240ms ease,
+    box-shadow 240ms ease,
+    border-color 240ms ease,
+    background-color 240ms ease;
+}
+
+.plan-option:hover,
+.plan-option:focus-visible {
+  transform: translateY(-7px);
+  border-color: var(--accent);
+  background: #2b1921;
+  box-shadow: 0 22px 42px #d90b5530;
 }
 
 .plan-option > span {
@@ -99,6 +115,15 @@ footer .brand-logo {
   letter-spacing: -1.5px;
 }
 
+.plan-select {
+  display: block;
+  margin-top: 24px;
+  color: #f0a0ba;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
 .plan-disclaimer {
   margin: 24px 0 18px;
   color: #e98aa9;
@@ -109,8 +134,18 @@ footer .brand-logo {
   gap: 20px;
 }
 
+.preview,
+#motion,
+.ticker-pause,
+.carousel-pause,
+.carousel-position,
+.gallery-slide figcaption {
+  display: none !important;
+}
+
 .cards > article {
   animation: class-card-enter 600ms both;
+  border-radius: 16px;
   box-shadow: 0 12px 28px #17151a14;
   transition:
     transform 240ms ease,
@@ -153,6 +188,7 @@ footer .brand-logo {
   aspect-ratio: 4 / 5;
   margin-bottom: 22px;
   overflow: hidden;
+  border-radius: 10px;
   background: #17151a;
 }
 
@@ -166,21 +202,6 @@ footer .brand-logo {
 
 .cards > article:hover .class-artwork > img:first-child {
   transform: scale(1.045);
-}
-
-.class-artwork-dual > img:nth-child(2) {
-  position: absolute;
-  right: 14px;
-  bottom: 14px;
-  width: 34%;
-  height: 58%;
-  border: 3px solid #f0eee8;
-  border-radius: 5px;
-  box-shadow: 0 8px 22px #0009;
-}
-
-.cards > article:hover .class-artwork-dual > img:nth-child(2) {
-  transform: translateY(-4px) rotate(2deg);
 }
 
 a,
@@ -198,13 +219,22 @@ button:not(:disabled):hover {
   transform: translateY(-2px);
 }
 
+.button,
+.navcta,
+.cards > article > a {
+  border-radius: 999px;
+}
+
 .button:hover,
 .navcta:hover,
 .cards > article > a:hover,
-.social-links a:hover,
 .floating-social a:hover,
 button:not(:disabled):hover {
   box-shadow: 0 8px 22px #d90b5540;
+}
+
+.social-links a:hover {
+  box-shadow: none;
 }
 
 @keyframes class-card-enter {
