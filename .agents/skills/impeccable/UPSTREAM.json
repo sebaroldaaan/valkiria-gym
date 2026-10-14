@@ -1,0 +1,7 @@
+{
+  "source": "https://github.com/pbakaus/impeccable",
+  "commit": "2f98774f86bc05563876643db37e6c37c322850f",
+  "skill_version": "4.5.2",
+  "archive_sha256": "49f04aa0ba825d22bad7e6b72be6e917c06464cfab0be1af3147745104618ae2",
+  "installation": "project-local manual copy of .agents/skills/impeccable; no hooks registered"
+}
