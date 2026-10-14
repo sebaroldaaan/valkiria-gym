@@ -1,0 +1,57 @@
+/* Motion is applied with WAAPI only while an element is entering the viewport. */
+:root { --motion-arrive: cubic-bezier(0.16, 1, 0.3, 1); }
+body { font-variant-emoji: text; }
+header { top: 0; }
+.hero { min-height: 820px; height: 100svh; }
+.hero-copy { padding-top: clamp(150px, 19vh, 210px); animation: none; }
+.hero h1 { font-size: clamp(66px, 7.4vw, 112px); letter-spacing: -0.04em; }
+.hero-line { display: block; overflow: clip; padding: 0 .08em .12em 0; margin-bottom: -.12em; }
+.hero-line > span { display: block; transform-origin: 0 100%; }
+.hero h1 em { color: #f1749e; }
+.hero .intro { max-width: 34ch; }
+.hero .button, .booking .button { color: #fff; background: #bd0948; }
+.hero .button:hover, .booking .button:hover { background: #a90840; }
+.hero .button b { transition: transform 220ms var(--motion-arrive); }
+.hero .button:hover b { transform: translate(3px, -3px); }
+.hero-light { animation: none; opacity: .6; }
+.hero-orbit { opacity: .5; box-shadow: none; }
+.hero-grid { opacity: .4; }
+.scene-label { right: 6%; bottom: 104px; margin: 0; text-align: right; line-height: 1.6; font-size: 9px; color: #e7c9d5; }
+.scene-label small { color: #c0a9b4; }
+#motion { top: 123px; right: 5%; min-height: 36px; color: #e5d5dc; background: #21171c; font-size: 11px; padding: 9px 15px; }
+#motion[hidden] { display: none; }
+#motion:disabled { opacity: .7; cursor: default; }
+.hero-bottom { bottom: 28px; }
+.motion-word { display: inline-block; }
+.quote-lines > * { will-change: auto; }
+.section, .booking, .scroll-quote, .manifesto { overflow: clip; }
+.cards > article { animation: none; padding: 22px 16px; }
+.cards > article, .plan-option { transition-timing-function: var(--motion-arrive); }
+.cards > article:hover, .cards > article:focus-within, .plan-option:hover, .plan-option:focus-visible { transform: translateY(-5px); }
+.carousel-bar { justify-content: flex-end; }
+.carousel-pause { font-size: 16px !important; }
+.ticker-pause { width: 44px; }
+.ticker-outside .ticker-run, .page-background .ticker-run { animation-play-state: paused; }
+::selection { color: #fff; background: #a50842; }
+@media (min-width: 651px) and (max-width: 1000px) {
+  .hero h1 { font-size: clamp(66px, 9vw, 88px); }
+  .hero-copy { max-width: 55%; }
+  .hero .textlink { display: block; margin: 20px 0 0; }
+}
+@media (max-width: 650px) {
+  .hero { height: auto; min-height: 940px; }
+  .hero-copy { max-width: none; padding: 118px 6% 0; }
+  .hero h1 { font-size: clamp(58px, 15.3vw, 78px); margin: 22px 0; }
+  .hero .textlink { margin-left: 12px; }
+  #scene { top: 475px; height: 370px; }
+  #motion { top: auto; bottom: 90px; left: 6%; right: auto; font-size: 10px; }
+  .scene-label { bottom: 138px; left: 6%; right: auto; text-align: left; font-size: 8px; }
+  .scene-label small { font-size: 9px; }
+  .cards > article { padding: 22px 0; box-shadow: none; }
+  .cards > article:hover { box-shadow: none; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .hero-line > span, .motion-word { transform: none !important; }
+  .cards > article:hover, .plan-option:hover, .hero .button:hover b { transform: none; }
+  .scene-label { opacity: 1; }
+}

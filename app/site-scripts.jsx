@@ -2,35 +2,42 @@
 
 import { useEffect } from "react";
 
-const scripts = ["/content.js", "/site.js", "/scene.js"];
+// Share in-flight requests across Strict Mode's mount/cleanup/mount cycle.
+const loaded = new Map();
+function loadScript(src) {
+  if (!loaded.has(src)) {
+    const promise = new Promise((resolve, reject) => {
+      const script = document.createElement("script");
+      script.src = src;
+      script.onload = resolve;
+      script.onerror = () => { script.remove(); loaded.delete(src); reject(new Error(`Unable to load ${src}`)); };
+      document.body.append(script);
+    });
+    loaded.set(src, promise);
+  }
+  return loaded.get(src);
+}
 
 export default function SiteScripts() {
   useEffect(() => {
-    let currentScript;
     let cancelled = false;
-
-    function loadScript(index) {
-      if (cancelled || index === scripts.length) return;
-
-      const script = document.createElement("script");
-      script.src = scripts[index];
-      script.async = false;
-      script.onload = () => loadScript(index + 1);
-      script.onerror = () => {
-        console.error(`Unable to load ${scripts[index]}`);
-      };
-
-      currentScript = script;
-      document.body.append(script);
+    const cleanups = [];
+    async function start() {
+      try {
+        await Promise.all(["/content.js", "/motion.js", "/site.js", "/scene.js"].map(loadScript));
+        if (cancelled) return;
+        const motion = window.createValkiriaMotion();
+        cleanups.push(() => motion.destroy());
+        cleanups.push(window.initValkiriaSite(motion));
+        cleanups.push(window.initValkiriaScene(motion));
+      } catch (error) {
+        cleanups.reverse().forEach(cleanup => cleanup?.());
+        cleanups.length = 0;
+        console.error(error);
+      }
     }
-
-    loadScript(0);
-
-    return () => {
-      cancelled = true;
-      currentScript?.remove();
-    };
+    start();
+    return () => { cancelled = true; cleanups.reverse().forEach(cleanup => cleanup?.()); };
   }, []);
-
   return null;
 }

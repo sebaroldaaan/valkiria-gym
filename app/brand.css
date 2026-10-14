@@ -135,46 +135,18 @@ footer .brand-logo {
 }
 
 .preview,
-#motion,
-.ticker-pause,
-.carousel-pause,
 .carousel-position,
 .gallery-slide figcaption {
   display: none !important;
 }
 
 .cards > article {
-  animation: class-card-enter 600ms both;
   border-radius: 16px;
   box-shadow: 0 12px 28px #17151a14;
   transition:
     transform 240ms ease,
     box-shadow 240ms ease,
     border-color 240ms ease;
-}
-
-.cards > article:nth-child(2) {
-  animation-delay: 80ms;
-}
-
-.cards > article:nth-child(3) {
-  animation-delay: 160ms;
-}
-
-.cards > article:nth-child(4) {
-  animation-delay: 240ms;
-}
-
-.cards > article:nth-child(5) {
-  animation-delay: 320ms;
-}
-
-.cards > article:nth-child(6) {
-  animation-delay: 400ms;
-}
-
-.cards > article:nth-child(7) {
-  animation-delay: 480ms;
 }
 
 .cards > article:hover {

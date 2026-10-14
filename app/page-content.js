@@ -8,15 +8,16 @@ export const pageMarkup = String.raw`<section class="hero">
 <canvas id="scene" aria-label="Ilustración 3D animada de una mancuerna, no representa equipamiento confirmado del gimnasio" role="img" width="684" height="688">
 </canvas>
 <div class="hero-copy">
-<h1>Tu fuerza.<br>Tu ritmo.<br>
-<em>Tu lugar.</em>
-</h1>
+<h1><span class="hero-line"><span>Tu fuerza.</span></span>
+<span class="hero-line"><span>Tu ritmo.</span></span>
+<span class="hero-line"><span><em>Tu lugar.</em></span></span></h1>
 <p class="intro">El primer paso no tiene que ser perfecto.<br>Solo tiene que ser tuyo.</p>
 <a class="button" href="#turno">Quiero empezar <b>↗</b>
 </a>
 <a class="textlink" href="#espacio">Conocé Valkiria ↓</a>
 </div>
-<button id="motion" aria-pressed="false" hidden>Pausar animación Ⅱ</button>
+<button id="motion" type="button" aria-pressed="false" hidden>Pausar movimiento</button>
+<p class="scene-label">FUERZA EN MOVIMIENTO<small>Ilustración 3D conceptual</small></p>
 <div class="hero-bottom">
 <span>GIMNASIO FEMENINO / BUENOS AIRES</span>
 </div>
@@ -140,9 +141,9 @@ export const pageMarkup = String.raw`<section class="hero">
 <section class="scroll-quote" aria-label="Una frase para tu próximo paso">
 <p class="eyebrow">A TU RITMO. TODOS LOS DÍAS.</p>
 <p class="quote-lines">
-<span style="opacity: 0.25; transform: translateY(25px);">No hace falta</span>
-<span style="opacity: 0.25; transform: translateY(25px);">ser la mejor.</span>
-<em style="opacity: 0.25; transform: translateY(25px);">Hace falta empezar.</em>
+<span>No hace falta</span>
+<span>ser la mejor.</span>
+<em>Hace falta empezar.</em>
 </p>
 <span class="quote-foot">VALKIRIA / TU FUERZA EMPIEZA ACÁ</span>
 </section>
@@ -383,8 +384,8 @@ export const pageMarkup = String.raw`<section class="hero">
 </section>
 <section class="manifesto">
 <p class="eyebrow">NO ES UNA COMPETENCIA.</p>
-<h2 style="opacity: 0.25; transform: translateY(25px);">Es tu proceso.<br>
-<em>Disfrutá hacerlo tuyo.</em>
+<h2><span class="motion-word">Es</span> <span class="motion-word">tu</span> <span class="motion-word">proceso.</span><br>
+<em><span class="motion-word">Disfrutá</span> <span class="motion-word">hacerlo</span> <span class="motion-word">tuyo.</span></em>
 </h2>
 <span>VALKIRIA / FUERZA EN MOVIMIENTO</span>
 </section>

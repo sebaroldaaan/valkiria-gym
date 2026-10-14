@@ -1,5 +1,6 @@
 import "./globals.css";
 import "./brand.css";
+import "./motion.css";
 
 export const metadata = {
   title: "Valkiria — Tu fuerza empieza acá",
