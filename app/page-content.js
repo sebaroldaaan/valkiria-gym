@@ -1,7 +1,7 @@
 export const pageMarkup = String.raw`<button id="motion" type="button" aria-pressed="false" hidden>Pausar movimiento</button>
 <section class="hero hero-cinematic">
 <div class="hero-photograph" aria-hidden="true">
-<img src="/assets/valkiria-hero.webp" width="1128" height="1394" alt="" fetchpriority="high" decoding="async">
+<img src="/assets/valkiria-hero-1128.webp" srcset="/assets/valkiria-hero-640.webp 640w, /assets/valkiria-hero-960.webp 960w, /assets/valkiria-hero-1128.webp 1128w" sizes="(max-width: 650px) 600px, (max-width: 1000px) 900px, (max-width: 1562px) 64vw, 1000px" width="1128" height="1394" alt="" fetchpriority="high" decoding="async">
 </div>
 <div class="hero-shade" aria-hidden="true"></div>
 <div class="hero-copy">
@@ -57,50 +57,50 @@ export const pageMarkup = String.raw`<button id="motion" type="button" aria-pres
 </div>
 <div class="carousel" data-carousel="facilities" role="region" aria-roledescription="carrusel" aria-label="Instalaciones de Valkiria">
 <div class="carousel-track continuous-track" tabindex="0" aria-label="Galería de instalaciones; usá las flechas del teclado">
-<figure class="gallery-slide" role="group" aria-roledescription="diapositiva" aria-label="1 de 4">
-<img src="/assets/valkiria-0.webp" alt="Sala de entrenamiento · octubre de 2024" loading="lazy" decoding="async">
+<figure class="gallery-slide" style="--photo-ratio: 1050 / 1400" role="group" aria-roledescription="diapositiva" aria-label="1 de 4">
+<img src="/assets/valkiria-0.webp" width="1050" height="1400" alt="Sala de entrenamiento · octubre de 2024" loading="lazy" decoding="async">
 <figcaption>Sala de entrenamiento · octubre de 2024<br>
 <a href="https://maps.app.goo.gl/grCKLn7wGQ9CfPLz6" target="_blank" rel="noopener">Ver en Google Maps <svg class="link-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg></a>
 </figcaption>
 </figure>
-<figure class="gallery-slide" role="group" aria-roledescription="diapositiva" aria-label="2 de 4">
-<img src="/assets/valkiria-3.webp" alt="Equipamiento · octubre de 2024" loading="lazy" decoding="async">
+<figure class="gallery-slide" style="--photo-ratio: 1050 / 1400" role="group" aria-roledescription="diapositiva" aria-label="2 de 4">
+<img src="/assets/valkiria-3.webp" width="1050" height="1400" alt="Equipamiento · octubre de 2024" loading="lazy" decoding="async">
 <figcaption>Equipamiento · octubre de 2024<br>
 <a href="https://maps.app.goo.gl/grCKLn7wGQ9CfPLz6" target="_blank" rel="noopener">Ver en Google Maps <svg class="link-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg></a>
 </figcaption>
 </figure>
-<figure class="gallery-slide" role="group" aria-roledescription="diapositiva" aria-label="3 de 4">
-<img src="/assets/valkiria-2.webp" alt="Vista interior · diciembre de 2023" loading="lazy" decoding="async">
+<figure class="gallery-slide" style="--photo-ratio: 1400 / 1050" role="group" aria-roledescription="diapositiva" aria-label="3 de 4">
+<img src="/assets/valkiria-2.webp" width="1400" height="1050" alt="Vista interior · diciembre de 2023" loading="lazy" decoding="async">
 <figcaption>Vista interior · diciembre de 2023<br>
 <a href="https://maps.app.goo.gl/grCKLn7wGQ9CfPLz6" target="_blank" rel="noopener">Ver en Google Maps <svg class="link-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg></a>
 </figcaption>
 </figure>
-<figure class="gallery-slide" role="group" aria-roledescription="diapositiva" aria-label="4 de 4">
-<img src="/assets/valkiria-1.webp" alt="Frente del local · diciembre de 2023 · cartel Nissi visible" loading="lazy" decoding="async">
+<figure class="gallery-slide" style="--photo-ratio: 1400 / 1050" role="group" aria-roledescription="diapositiva" aria-label="4 de 4">
+<img src="/assets/valkiria-1.webp" width="1400" height="1050" alt="Frente del local · diciembre de 2023 · cartel Nissi visible" loading="lazy" decoding="async">
 <figcaption>Frente del local · diciembre de 2023 · cartel Nissi visible<br>
 <a href="https://maps.app.goo.gl/grCKLn7wGQ9CfPLz6" target="_blank" rel="noopener">Ver en Google Maps <svg class="link-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg></a>
 </figcaption>
 </figure>
-<figure class="gallery-slide" role="group" aria-roledescription="diapositiva" aria-label="1 de 4" aria-hidden="true" inert="">
-<img src="/assets/valkiria-0.webp" alt="Sala de entrenamiento · octubre de 2024" loading="lazy" decoding="async">
+<figure class="gallery-slide" style="--photo-ratio: 1050 / 1400" role="group" aria-roledescription="diapositiva" aria-label="1 de 4" aria-hidden="true" inert="">
+<img src="/assets/valkiria-0.webp" width="1050" height="1400" alt="Sala de entrenamiento · octubre de 2024" loading="lazy" decoding="async">
 <figcaption>Sala de entrenamiento · octubre de 2024<br>
 <a href="https://maps.app.goo.gl/grCKLn7wGQ9CfPLz6" target="_blank" rel="noopener" tabindex="-1">Ver en Google Maps <svg class="link-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg></a>
 </figcaption>
 </figure>
-<figure class="gallery-slide" role="group" aria-roledescription="diapositiva" aria-label="2 de 4" aria-hidden="true" inert="">
-<img src="/assets/valkiria-3.webp" alt="Equipamiento · octubre de 2024" loading="lazy" decoding="async">
+<figure class="gallery-slide" style="--photo-ratio: 1050 / 1400" role="group" aria-roledescription="diapositiva" aria-label="2 de 4" aria-hidden="true" inert="">
+<img src="/assets/valkiria-3.webp" width="1050" height="1400" alt="Equipamiento · octubre de 2024" loading="lazy" decoding="async">
 <figcaption>Equipamiento · octubre de 2024<br>
 <a href="https://maps.app.goo.gl/grCKLn7wGQ9CfPLz6" target="_blank" rel="noopener" tabindex="-1">Ver en Google Maps <svg class="link-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg></a>
 </figcaption>
 </figure>
-<figure class="gallery-slide" role="group" aria-roledescription="diapositiva" aria-label="3 de 4" aria-hidden="true" inert="">
-<img src="/assets/valkiria-2.webp" alt="Vista interior · diciembre de 2023" loading="lazy" decoding="async">
+<figure class="gallery-slide" style="--photo-ratio: 1400 / 1050" role="group" aria-roledescription="diapositiva" aria-label="3 de 4" aria-hidden="true" inert="">
+<img src="/assets/valkiria-2.webp" width="1400" height="1050" alt="Vista interior · diciembre de 2023" loading="lazy" decoding="async">
 <figcaption>Vista interior · diciembre de 2023<br>
 <a href="https://maps.app.goo.gl/grCKLn7wGQ9CfPLz6" target="_blank" rel="noopener" tabindex="-1">Ver en Google Maps <svg class="link-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg></a>
 </figcaption>
 </figure>
-<figure class="gallery-slide" role="group" aria-roledescription="diapositiva" aria-label="4 de 4" aria-hidden="true" inert="">
-<img src="/assets/valkiria-1.webp" alt="Frente del local · diciembre de 2023 · cartel Nissi visible" loading="lazy" decoding="async">
+<figure class="gallery-slide" style="--photo-ratio: 1400 / 1050" role="group" aria-roledescription="diapositiva" aria-label="4 de 4" aria-hidden="true" inert="">
+<img src="/assets/valkiria-1.webp" width="1400" height="1050" alt="Frente del local · diciembre de 2023 · cartel Nissi visible" loading="lazy" decoding="async">
 <figcaption>Frente del local · diciembre de 2023 · cartel Nissi visible<br>
 <a href="https://maps.app.goo.gl/grCKLn7wGQ9CfPLz6" target="_blank" rel="noopener" tabindex="-1">Ver en Google Maps <svg class="link-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg></a>
 </figcaption>
@@ -138,7 +138,7 @@ export const pageMarkup = String.raw`<button id="motion" type="button" aria-pres
 <div class="story-stage">
 <div class="story-deck" aria-hidden="true">
 <div class="story-photo"><img src="/assets/valkiria-0.webp" width="1050" height="1400" alt="" loading="lazy" decoding="async"></div>
-<div class="story-photo"><img src="/assets/valkiria-hero.webp" width="1128" height="1394" alt="" loading="lazy" decoding="async"></div>
+<div class="story-photo"><img src="/assets/valkiria-hero-1128.webp" width="1128" height="1394" alt="" loading="lazy" decoding="async"></div>
 <div class="story-photo"><img src="/assets/valkiria-3.webp" width="1050" height="1400" alt="" loading="lazy" decoding="async"></div>
 </div>
 <p class="story-accessible">No hace falta ser la mejor. Hace falta empezar.</p>
@@ -162,7 +162,7 @@ export const pageMarkup = String.raw`<button id="motion" type="button" aria-pres
 <div class="cards">
 <article>
 <div class="class-artwork">
-<img src="/assets/classes/cross-flyer.png" alt="Flyer de la clase Cross, martes y jueves a las 10:00" loading="lazy" decoding="async">
+<img src="/assets/classes/cross-768.webp" srcset="/assets/classes/cross-480.webp 480w, /assets/classes/cross-768.webp 768w" sizes="(max-width: 650px) 88vw, (max-width: 1000px) 44vw, 28vw" width="768" height="960" alt="Flyer de la clase Cross, martes y jueves a las 10:00" loading="lazy" decoding="async">
 </div>
 <span>01 — FUERZA</span>
 <h3>Cross</h3>
@@ -172,7 +172,7 @@ export const pageMarkup = String.raw`<button id="motion" type="button" aria-pres
 </article>
 <article>
 <div class="class-artwork">
-<img src="/assets/classes/gap-flyer.png" alt="Flyer de la clase GAP, martes y jueves a las 19:00" loading="lazy" decoding="async">
+<img src="/assets/classes/gap-768.webp" srcset="/assets/classes/gap-480.webp 480w, /assets/classes/gap-768.webp 768w" sizes="(max-width: 650px) 88vw, (max-width: 1000px) 44vw, 28vw" width="768" height="960" alt="Flyer de la clase GAP, martes y jueves a las 19:00" loading="lazy" decoding="async">
 </div>
 <span>02 — FUERZA</span>
 <h3>GAP</h3>
@@ -182,7 +182,7 @@ export const pageMarkup = String.raw`<button id="motion" type="button" aria-pres
 </article>
 <article>
 <div class="class-artwork">
-<img src="/assets/classes/salsa-flyer.png" alt="Flyer de la clase de Salsa con el profesor César, sábados a las 10:30" loading="lazy" decoding="async">
+<img src="/assets/classes/salsa-768.webp" srcset="/assets/classes/salsa-480.webp 480w, /assets/classes/salsa-768.webp 768w" sizes="(max-width: 650px) 88vw, (max-width: 1000px) 44vw, 28vw" width="768" height="960" alt="Flyer de la clase de Salsa con el profesor César, sábados a las 10:30" loading="lazy" decoding="async">
 </div>
 <span>03 — RITMO</span>
 <h3>Salsa</h3>

@@ -12,8 +12,8 @@ window.initValkiriaCinematic = function initValkiriaCinematic(motion) {
   const clamp = (value, min = 0, max = 1) => Math.min(max, Math.max(min, value));
   const on = (target, name, fn) => target.addEventListener(name, fn, { passive: true, signal: events.signal });
   const breathing = photo.animate?.([
-    { transform: 'scale(1.04) translateX(0)' },
-    { transform: 'scale(1.12) translateX(-1.5%)' },
+    { transform: 'scale(1.015) translateX(0)' },
+    { transform: 'scale(1.045) translateX(-.8%)' },
   ], { duration: 18000, iterations: Infinity, direction: 'alternate', easing: 'ease-in-out' });
   breathing?.pause();
   story.classList.add('story-enhanced');

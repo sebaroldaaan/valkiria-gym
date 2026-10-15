@@ -1,7 +1,7 @@
 /* Photographic art direction. The source image is the previously cleaned gym image. */
 .hero-cinematic { isolation: isolate; min-height: 780px; max-height: 1120px; height: 100svh; background: #121114; }
-.hero-photograph { position: absolute; inset: 0 0 0 27%; z-index: -2; overflow: hidden; mask-image: linear-gradient(90deg, transparent, #000 18%); }
-.hero-photograph img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: 52% 66%; transform: scale(1.04); }
+.hero-photograph { position: absolute; inset: 0 0 0 auto; width: min(64vw, 1000px); z-index: -2; overflow: hidden; mask-image: linear-gradient(90deg, transparent, #000 22%); }
+.hero-photograph img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: 52% 66%; transform: scale(1.015); }
 .hero-shade { position: absolute; inset: 0; z-index: -1; background: linear-gradient(90deg, #121114 6%, #121114f5 26%, #121114ab 45%, #12111415 72%), linear-gradient(0deg, #121114 0%, #12111400 28%, #12111420 75%, #12111499 100%); }
 .hero-cinematic .hero-copy { padding-top: clamp(155px, 20svh, 220px); max-width: 57%; }
 .hero-cinematic h1 { font-size: clamp(70px, 8vw, 116px); line-height: .98; margin: 25px 0 32px; }
@@ -53,7 +53,7 @@
 .motion-paused .story-enhanced em.story-line { display: block; }
 @media (max-width: 1000px) and (min-width: 651px) {
   .hero-cinematic .hero-copy { max-width: 65%; }
-  .hero-photograph { left: 16%; }
+  .hero-photograph { width: 84%; }
   .hero-shade { background: linear-gradient(90deg, #121114f0 0%, #121114c2 36%, #12111430 100%), linear-gradient(0deg, #121114, #12111400 45%); }
   .hero-cinematic h1 { font-size: clamp(68px, 9.6vw, 96px); }
 }
@@ -62,7 +62,7 @@
   .hero-cinematic .hero-copy { padding-top: 130px; max-width: none; }
   .hero-cinematic h1 { font-size: clamp(54px, 15vw, 86px); margin: 20px 0 24px; }
   .hero-cinematic .intro { font-size: 14px; max-width: 30ch; }
-  .hero-photograph { inset: 200px 0 0; mask-image: linear-gradient(180deg, transparent, #000 16%); }
+  .hero-photograph { inset: 200px 0 0; width: auto; mask-image: linear-gradient(180deg, transparent, #000 16%); }
   .hero-photograph img { object-position: 48% 68%; }
   .hero-shade { background: linear-gradient(180deg, #121114 20%, #121114d9 39%, #12111442 61%, #12111422 78%, #121114 100%); }
   .hero-cinematic .hero-bottom { bottom: 80px; flex-direction: column; align-items: flex-start; gap: 9px; padding-top: 17px; }

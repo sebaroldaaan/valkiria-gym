@@ -16,7 +16,7 @@ export default function Home() {
         <a className="brand" href="#" aria-label="Valkiria inicio">
           <img
             className="brand-logo"
-            src="/assets/logo-valk.png"
+            src="/assets/logo-valk-300.webp"
             alt="VAK · Gimnasio femenino"
             width="150"
             height="150"
@@ -43,15 +43,15 @@ export default function Home() {
         <a className="brand" href="#">
           <img
             className="brand-logo"
-            src="/assets/logo-valk.png"
+            src="/assets/logo-valk-300.webp"
             alt="VAK · Gimnasio femenino"
             width="150"
             height="150"
           />
         </a>
         <p>Tu fuerza empieza acá.</p>
-        <a href="briefing.html">Briefing y contenido pendiente ↗</a>
-        <small>Prototipo de presentación · Sin reservas ni cobros automáticos.</small>
+        <a href="#turno">Consultá por tu primera visita ↗</a>
+        <small>Guillermo Marconi 3254 · Isidro Casanova</small>
       </footer>
 
       <div className="floating-social">

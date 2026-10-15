@@ -3,24 +3,32 @@ window.VALKIRIA_CONTENT = {
   "photos": [
     {
       "src": "assets/valkiria-0.webp",
+      "width": 1050,
+      "height": 1400,
       "alt": "Sala de entrenamiento · octubre de 2024",
       "caption": "Sala de entrenamiento · octubre de 2024",
       "source": "https://maps.app.goo.gl/grCKLn7wGQ9CfPLz6"
     },
     {
       "src": "assets/valkiria-3.webp",
+      "width": 1050,
+      "height": 1400,
       "alt": "Equipamiento · octubre de 2024",
       "caption": "Equipamiento · octubre de 2024",
       "source": "https://maps.app.goo.gl/grCKLn7wGQ9CfPLz6"
     },
     {
       "src": "assets/valkiria-2.webp",
+      "width": 1400,
+      "height": 1050,
       "alt": "Vista interior · diciembre de 2023",
       "caption": "Vista interior · diciembre de 2023",
       "source": "https://maps.app.goo.gl/grCKLn7wGQ9CfPLz6"
     },
     {
       "src": "assets/valkiria-1.webp",
+      "width": 1400,
+      "height": 1050,
       "alt": "Frente del local · diciembre de 2023 · cartel Nissi visible",
       "caption": "Frente del local · diciembre de 2023 · cartel Nissi visible",
       "source": "https://maps.app.goo.gl/grCKLn7wGQ9CfPLz6"

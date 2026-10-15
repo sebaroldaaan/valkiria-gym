@@ -35,7 +35,8 @@ Usar Arial/Helvetica para la interfaz y el texto general. Reservar Georgia en cu
 
 ## Hero
 - Mantener el título “Tu fuerza. Tu ritmo. Tu lugar.” y el CTA hacia el formulario.
-- La portada vigente es fotográfica: `public/assets/valkiria-hero.webp`, derivada de la imagen limpia del gimnasio preparada anteriormente.
+- La portada vigente es fotográfica: versiones `public/assets/valkiria-hero-{640,960,1128}.webp`, derivadas de la imagen limpia del gimnasio preparada anteriormente. El original anterior permanece disponible.
+- Limitar el panel fotográfico a 1000px en escritorio y el zoom a 1,045 para evitar ampliaciones innecesarias de la fuente de 1128px.
 - Usar un acercamiento lento y desplazamiento suave, con sombreado para mantener legibilidad. No presentar este efecto como filmación nueva del gimnasio.
 - La versión anterior de la mancuerna permanece en el historial; su renderizador no se carga en esta portada.
 
@@ -57,6 +58,7 @@ Usar Arial/Helvetica para la interfaz y el texto general. Reservar Georgia en cu
 - Usar las cuatro fotografías locales en `public/assets/`, con sus textos alternativos y enlaces a Google Maps.
 - Mantener el carrusel separado de las reseñas por las secciones sobre nosotros, frase y planes.
 - Las imágenes provienen de la ficha de Google Maps y son una captura manual de 2023–2024.
+- Respetar la proporción de cada fotografía: tarjetas de altura común y ancho variable. Reservar espacio dentro del carrusel para la elevación y rotación al pasar el cursor.
 
 ## Reseñas
 - Mostrar únicamente la captura manual de las cinco valoraciones enlazadas a Google Maps.
@@ -72,6 +74,7 @@ Usar Arial/Helvetica para la interfaz y el texto general. Reservar Georgia en cu
 ## Clases y horarios
 - Clases informadas: Cross, GAP, Salsa, Step, Zumba y Yoga; también hay entrenamiento libre.
 - Usar las imágenes originales provistas para las clases; no sustituirlas por ilustraciones nuevas.
+- Servir las versiones WebP de 480/768px de los flyers; conservar los PNG originales como fuente.
 - Horarios publicados en las piezas: Cross, martes y jueves a las 10:00; GAP, martes y jueves a las 19:00; Salsa, sábados a las 10:30.
 - Consultar por WhatsApp los horarios de Step, Zumba, Yoga y entrenamiento libre; no inventar horarios.
 - Horario general del gimnasio: lunes a viernes, 07:00 a 20:00; sábados, 09:00 a 13:00; domingos, cerrado.

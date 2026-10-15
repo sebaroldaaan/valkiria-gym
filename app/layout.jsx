@@ -4,9 +4,23 @@ import "./motion.css";
 import "./cinematic.css";
 
 export const metadata = {
+  // Set SITE_URL to the public origin when the presentation is deployed.
+  metadataBase: process.env.SITE_URL
+    ? new URL(process.env.SITE_URL)
+    : process.env.VERCEL_URL
+      ? new URL(`https://${process.env.VERCEL_URL}`)
+      : undefined,
   title: "Valkiria — Tu fuerza empieza acá",
   description:
     "Un gimnasio femenino en Isidro Casanova. Conocé Valkiria, consultá actividades y coordiná tu visita.",
+  openGraph: {
+    type: "website",
+    locale: "es_AR",
+    siteName: "Valkiria Gym",
+    title: "Valkiria — Tu fuerza empieza acá",
+    description: "Tu fuerza. Tu ritmo. Tu lugar. Gimnasio femenino en Isidro Casanova.",
+  },
+  twitter: { card: "summary_large_image" },
 };
 
 export default function RootLayout({ children }) {
