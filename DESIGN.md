@@ -17,8 +17,9 @@ Reflejar la propuesta visual de Valkiria: un gimnasio femenino en Buenos Aires, 
 - Usar el logo VAK provisto como marca principal en navegación y pie.
 - Usar el logo PNG original provisto por el gimnasio.
 - Alinear los acentos visuales con el negro, blanco y magenta del logo y las piezas del gimnasio.
-- Combinar fotografías reales del gimnasio con una ilustración 3D claramente identificada como conceptual.
-- Mantener las animaciones pausables, sutiles y respetuosas de `prefers-reduced-motion`.
+- Priorizar el gimnasio real como protagonista de la portada. Usar la imagen limpia ya preparada, con movimiento fotográfico suave.
+- La actualización de movimiento del 14/10/2026 responde al pedido de entradas más notorias y una sección inspirada en los videos de referencia.
+- Mantener las animaciones pausables y respetuosas de `prefers-reduced-motion`; las entradas de tarjetas pueden ser más pronunciadas según el pedido del usuario.
 
 ## Paleta
 - Tinta: #17151A
@@ -34,9 +35,9 @@ Usar Arial/Helvetica para la interfaz y el texto general. Reservar Georgia en cu
 
 ## Hero
 - Mantener el título “Tu fuerza. Tu ritmo. Tu lugar.” y el CTA hacia el formulario.
-- La mancuerna 3D es una ilustración conceptual, no equipamiento confirmado.
-- Conservar la etiqueta que aclara que el objeto es ilustrativo.
-- Mantener el fondo oscuro con luz magenta, órbita y grilla sutiles.
+- La portada vigente es fotográfica: `public/assets/valkiria-hero.webp`, derivada de la imagen limpia del gimnasio preparada anteriormente.
+- Usar un acercamiento lento y desplazamiento suave, con sombreado para mantener legibilidad. No presentar este efecto como filmación nueva del gimnasio.
+- La versión anterior de la mancuerna permanece en el historial; su renderizador no se carga en esta portada.
 
 ## Secciones aprobadas
 1. Hero y cinta de palabras
@@ -82,7 +83,10 @@ Usar Arial/Helvetica para la interfaz y el texto general. Reservar Georgia en cu
 - El formulario solo prepara un mensaje para WhatsApp: no reserva cupos, no cobra y no guarda los datos ingresados.
 
 ## Animaciones
-- La ilustración 3D, la cinta y los carruseles deben poder pausarse.
+- La portada, las entradas, la cinta, los carruseles y la secuencia de fotografías deben poder pausarse.
+- El control global de pausa se muestra como un círculo junto a las redes, con nombre accesible y tooltip.
+- La frase motivacional usa tres fotografías que se abren con el scroll y texto por etapas. No interceptar la rueda ni bloquear el desplazamiento.
+- Con movimiento reducido, presentar la frase completa y retirar la sección fijada durante el scroll.
 - Respetar `prefers-reduced-motion`; permitir navegación manual con botones y teclado.
 - Evitar animaciones que dificulten la lectura o el uso del formulario.
 
@@ -104,13 +108,16 @@ Breakpoints de referencia:
 - Priorizar WebP/AVIF.
 - Lazy-loading fuera del hero.
 - No cargar librerías pesadas si CSS resuelve el efecto.
-- El hero 3D usa WebGL y debe fallar de forma segura si el dispositivo no lo soporta.
+- La portada fotográfica no depende de WebGL. Si la imagen falla, mantener el fondo oscuro, los textos y los enlaces.
+- Animar el scroll con un único frame solicitado por evento, sin un bucle continuo de JavaScript. Pausar el acercamiento cuando la portada sale de pantalla o la pestaña queda oculta.
 
 ## Archivos de contenido
 - `app/page-content.js` contiene el marcado de las secciones.
 - `public/content.js` conserva la captura manual de fotos y reseñas.
 - `public/site.js` implementa carruseles, controles y el formulario de WhatsApp.
-- `public/scene.js` dibuja la ilustración WebGL del hero.
+- `public/motion.js` coordina las entradas y el estado global de movimiento.
+- `public/cinematic.js` anima la portada fotográfica y la secuencia ligada al scroll.
+- `public/scene.js` conserva el renderizador anterior, actualmente sin cargar.
 - Las fotos de la galería viven en `public/assets/`.
 
 ## Elementos bloqueados

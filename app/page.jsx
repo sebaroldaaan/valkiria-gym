@@ -30,7 +30,7 @@ export default function Home() {
           <a href="#visita">Cómo llegar</a>
         </nav>
         <a className="navcta" href="#turno">
-          Pedí tu turno ↗
+          Pedí tu turno <svg className="link-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14" /></svg>
         </a>
       </header>
 

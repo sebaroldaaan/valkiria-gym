@@ -1,25 +1,21 @@
-export const pageMarkup = String.raw`<section class="hero">
-<div class="hero-light" aria-hidden="true">
+export const pageMarkup = String.raw`<button id="motion" type="button" aria-pressed="false" hidden>Pausar movimiento</button>
+<section class="hero hero-cinematic">
+<div class="hero-photograph" aria-hidden="true">
+<img src="/assets/valkiria-hero.webp" width="1128" height="1394" alt="" fetchpriority="high" decoding="async">
 </div>
-<div class="hero-orbit" aria-hidden="true">
-</div>
-<div class="hero-grid" aria-hidden="true">
-</div>
-<canvas id="scene" aria-label="Ilustración 3D animada de una mancuerna, no representa equipamiento confirmado del gimnasio" role="img" width="684" height="688">
-</canvas>
+<div class="hero-shade" aria-hidden="true"></div>
 <div class="hero-copy">
 <h1><span class="hero-line"><span>Tu fuerza.</span></span>
 <span class="hero-line"><span>Tu ritmo.</span></span>
 <span class="hero-line"><span><em>Tu lugar.</em></span></span></h1>
 <p class="intro">El primer paso no tiene que ser perfecto.<br>Solo tiene que ser tuyo.</p>
-<a class="button" href="#turno">Quiero empezar <b>↗</b>
+<a class="button" href="#turno">Quiero empezar <b><svg class="link-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg></b>
 </a>
 <a class="textlink" href="#espacio">Conocé Valkiria ↓</a>
 </div>
-<button id="motion" type="button" aria-pressed="false" hidden>Pausar movimiento</button>
-<p class="scene-label">FUERZA EN MOVIMIENTO<small>Ilustración 3D conceptual</small></p>
 <div class="hero-bottom">
 <span>GIMNASIO FEMENINO / BUENOS AIRES</span>
+<a href="#instalaciones">Conocé nuestro espacio <span aria-hidden="true">↓</span></a>
 </div>
 </section>
 <div class="ticker" aria-label="Fuerza, actitud, movimiento, vos">
@@ -64,49 +60,49 @@ export const pageMarkup = String.raw`<section class="hero">
 <figure class="gallery-slide" role="group" aria-roledescription="diapositiva" aria-label="1 de 4">
 <img src="/assets/valkiria-0.webp" alt="Sala de entrenamiento · octubre de 2024" loading="lazy" decoding="async">
 <figcaption>Sala de entrenamiento · octubre de 2024<br>
-<a href="https://maps.app.goo.gl/grCKLn7wGQ9CfPLz6" target="_blank" rel="noopener">Ver en Google Maps ↗</a>
+<a href="https://maps.app.goo.gl/grCKLn7wGQ9CfPLz6" target="_blank" rel="noopener">Ver en Google Maps <svg class="link-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg></a>
 </figcaption>
 </figure>
 <figure class="gallery-slide" role="group" aria-roledescription="diapositiva" aria-label="2 de 4">
 <img src="/assets/valkiria-3.webp" alt="Equipamiento · octubre de 2024" loading="lazy" decoding="async">
 <figcaption>Equipamiento · octubre de 2024<br>
-<a href="https://maps.app.goo.gl/grCKLn7wGQ9CfPLz6" target="_blank" rel="noopener">Ver en Google Maps ↗</a>
+<a href="https://maps.app.goo.gl/grCKLn7wGQ9CfPLz6" target="_blank" rel="noopener">Ver en Google Maps <svg class="link-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg></a>
 </figcaption>
 </figure>
 <figure class="gallery-slide" role="group" aria-roledescription="diapositiva" aria-label="3 de 4">
 <img src="/assets/valkiria-2.webp" alt="Vista interior · diciembre de 2023" loading="lazy" decoding="async">
 <figcaption>Vista interior · diciembre de 2023<br>
-<a href="https://maps.app.goo.gl/grCKLn7wGQ9CfPLz6" target="_blank" rel="noopener">Ver en Google Maps ↗</a>
+<a href="https://maps.app.goo.gl/grCKLn7wGQ9CfPLz6" target="_blank" rel="noopener">Ver en Google Maps <svg class="link-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg></a>
 </figcaption>
 </figure>
 <figure class="gallery-slide" role="group" aria-roledescription="diapositiva" aria-label="4 de 4">
 <img src="/assets/valkiria-1.webp" alt="Frente del local · diciembre de 2023 · cartel Nissi visible" loading="lazy" decoding="async">
 <figcaption>Frente del local · diciembre de 2023 · cartel Nissi visible<br>
-<a href="https://maps.app.goo.gl/grCKLn7wGQ9CfPLz6" target="_blank" rel="noopener">Ver en Google Maps ↗</a>
+<a href="https://maps.app.goo.gl/grCKLn7wGQ9CfPLz6" target="_blank" rel="noopener">Ver en Google Maps <svg class="link-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg></a>
 </figcaption>
 </figure>
 <figure class="gallery-slide" role="group" aria-roledescription="diapositiva" aria-label="1 de 4" aria-hidden="true" inert="">
 <img src="/assets/valkiria-0.webp" alt="Sala de entrenamiento · octubre de 2024" loading="lazy" decoding="async">
 <figcaption>Sala de entrenamiento · octubre de 2024<br>
-<a href="https://maps.app.goo.gl/grCKLn7wGQ9CfPLz6" target="_blank" rel="noopener" tabindex="-1">Ver en Google Maps ↗</a>
+<a href="https://maps.app.goo.gl/grCKLn7wGQ9CfPLz6" target="_blank" rel="noopener" tabindex="-1">Ver en Google Maps <svg class="link-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg></a>
 </figcaption>
 </figure>
 <figure class="gallery-slide" role="group" aria-roledescription="diapositiva" aria-label="2 de 4" aria-hidden="true" inert="">
 <img src="/assets/valkiria-3.webp" alt="Equipamiento · octubre de 2024" loading="lazy" decoding="async">
 <figcaption>Equipamiento · octubre de 2024<br>
-<a href="https://maps.app.goo.gl/grCKLn7wGQ9CfPLz6" target="_blank" rel="noopener" tabindex="-1">Ver en Google Maps ↗</a>
+<a href="https://maps.app.goo.gl/grCKLn7wGQ9CfPLz6" target="_blank" rel="noopener" tabindex="-1">Ver en Google Maps <svg class="link-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg></a>
 </figcaption>
 </figure>
 <figure class="gallery-slide" role="group" aria-roledescription="diapositiva" aria-label="3 de 4" aria-hidden="true" inert="">
 <img src="/assets/valkiria-2.webp" alt="Vista interior · diciembre de 2023" loading="lazy" decoding="async">
 <figcaption>Vista interior · diciembre de 2023<br>
-<a href="https://maps.app.goo.gl/grCKLn7wGQ9CfPLz6" target="_blank" rel="noopener" tabindex="-1">Ver en Google Maps ↗</a>
+<a href="https://maps.app.goo.gl/grCKLn7wGQ9CfPLz6" target="_blank" rel="noopener" tabindex="-1">Ver en Google Maps <svg class="link-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg></a>
 </figcaption>
 </figure>
 <figure class="gallery-slide" role="group" aria-roledescription="diapositiva" aria-label="4 de 4" aria-hidden="true" inert="">
 <img src="/assets/valkiria-1.webp" alt="Frente del local · diciembre de 2023 · cartel Nissi visible" loading="lazy" decoding="async">
 <figcaption>Frente del local · diciembre de 2023 · cartel Nissi visible<br>
-<a href="https://maps.app.goo.gl/grCKLn7wGQ9CfPLz6" target="_blank" rel="noopener" tabindex="-1">Ver en Google Maps ↗</a>
+<a href="https://maps.app.goo.gl/grCKLn7wGQ9CfPLz6" target="_blank" rel="noopener" tabindex="-1">Ver en Google Maps <svg class="link-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg></a>
 </figcaption>
 </figure>
 </div>
@@ -132,20 +128,28 @@ export const pageMarkup = String.raw`<section class="hero">
 <p>Queremos que el primer paso sea simple: conocé el lugar, consultá las actividades y encontrá un momento para vos.</p>
 <p>Escribinos para conocer las opciones actuales y coordinar tu visita. Te contamos cómo empezar por WhatsApp.</p>
 <div class="social-links">
-<a class="darklink" data-wa="Hola, me gustaría conocer Valkiria y coordinar una visita." href="https://wa.me/5491172357022?text=Hola%2C%20me%20gustar%C3%ADa%20conocer%20Valkiria%20y%20coordinar%20una%20visita." target="_blank" rel="noopener">Hablemos por WhatsApp ↗</a>
-<a class="darklink" href="https://www.instagram.com/gimnasio_valkiria/" target="_blank" rel="noopener">Nuestro Instagram ↗</a>
+<a class="darklink" data-wa="Hola, me gustaría conocer Valkiria y coordinar una visita." href="https://wa.me/5491172357022?text=Hola%2C%20me%20gustar%C3%ADa%20conocer%20Valkiria%20y%20coordinar%20una%20visita." target="_blank" rel="noopener">Hablemos por WhatsApp <svg class="link-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg></a>
+<a class="darklink" href="https://www.instagram.com/gimnasio_valkiria/" target="_blank" rel="noopener">Nuestro Instagram <svg class="link-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg></a>
 </div>
 </div>
 </div>
 </section>
-<section class="scroll-quote" aria-label="Una frase para tu próximo paso">
-<p class="eyebrow">A TU RITMO. TODOS LOS DÍAS.</p>
-<p class="quote-lines">
-<span>No hace falta</span>
-<span>ser la mejor.</span>
-<em>Hace falta empezar.</em>
+<section class="scroll-quote motion-story" aria-label="Una frase para tu próximo paso">
+<div class="story-stage">
+<div class="story-deck" aria-hidden="true">
+<div class="story-photo"><img src="/assets/valkiria-0.webp" width="1050" height="1400" alt="" loading="lazy" decoding="async"></div>
+<div class="story-photo"><img src="/assets/valkiria-hero.webp" width="1128" height="1394" alt="" loading="lazy" decoding="async"></div>
+<div class="story-photo"><img src="/assets/valkiria-3.webp" width="1050" height="1400" alt="" loading="lazy" decoding="async"></div>
+</div>
+<p class="story-accessible">No hace falta ser la mejor. Hace falta empezar.</p>
+<p class="story-copy" aria-hidden="true">
+<span class="story-line">No hace falta</span>
+<span class="story-line">ser la mejor.</span>
+<em class="story-line">Hace falta<br>empezar.</em>
 </p>
-<span class="quote-foot">VALKIRIA / TU FUERZA EMPIEZA ACÁ</span>
+<div class="story-footer"><span>VALKIRIA / TU FUERZA EMPIEZA ACÁ</span><a href="#planes">Ver clases <span aria-hidden="true">↓</span></a></div>
+<div class="story-progress" aria-hidden="true"><span></span></div>
+</div>
 </section>
 <section class="section light" id="planes">
 <div class="section-top">
@@ -164,7 +168,7 @@ export const pageMarkup = String.raw`<section class="hero">
 <h3>Cross</h3>
 <p>Entrenamiento para trabajar fuerza y acondicionamiento físico.</p>
 <p class="class-time">Martes y jueves · 10:00</p>
-<a data-wa="Hola, quiero consultar por la clase de Cross." href="https://wa.me/5491172357022" target="_blank" rel="noopener">Consultar por Cross ↗</a>
+<a data-wa="Hola, quiero consultar por la clase de Cross." href="https://wa.me/5491172357022" target="_blank" rel="noopener">Consultar por Cross <svg class="link-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg></a>
 </article>
 <article>
 <div class="class-artwork">
@@ -174,7 +178,7 @@ export const pageMarkup = String.raw`<section class="hero">
 <h3>GAP</h3>
 <p>Una clase enfocada en glúteos, abdomen y piernas.</p>
 <p class="class-time">Martes y jueves · 19:00</p>
-<a data-wa="Hola, quiero consultar por la clase de GAP." href="https://wa.me/5491172357022" target="_blank" rel="noopener">Consultar por GAP ↗</a>
+<a data-wa="Hola, quiero consultar por la clase de GAP." href="https://wa.me/5491172357022" target="_blank" rel="noopener">Consultar por GAP <svg class="link-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg></a>
 </article>
 <article>
 <div class="class-artwork">
@@ -184,25 +188,25 @@ export const pageMarkup = String.raw`<section class="hero">
 <h3>Salsa</h3>
 <p>Sumate a bailar y entrenar al ritmo de la música.</p>
 <p class="class-time">Sábados · 10:30</p>
-<a data-wa="Hola, quiero consultar por la clase de Salsa." href="https://wa.me/5491172357022" target="_blank" rel="noopener">Consultar por Salsa ↗</a>
+<a data-wa="Hola, quiero consultar por la clase de Salsa." href="https://wa.me/5491172357022" target="_blank" rel="noopener">Consultar por Salsa <svg class="link-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg></a>
 </article>
 <article>
 <span>04 — CARDIO</span>
 <h3>Step</h3>
 <p>Consultá los días y horarios disponibles para las clases de Step.</p>
-<a data-wa="Hola, quiero consultar por las clases de Step y sus horarios." href="https://wa.me/5491172357022" target="_blank" rel="noopener">Consultar por Step ↗</a>
+<a data-wa="Hola, quiero consultar por las clases de Step y sus horarios." href="https://wa.me/5491172357022" target="_blank" rel="noopener">Consultar por Step <svg class="link-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg></a>
 </article>
 <article>
 <span>05 — BAILE</span>
 <h3>Zumba</h3>
 <p>Entrená y disfrutá de una clase de baile llena de energía.</p>
-<a data-wa="Hola, quiero consultar por las clases de Zumba y sus horarios." href="https://wa.me/5491172357022" target="_blank" rel="noopener">Consultar por Zumba ↗</a>
+<a data-wa="Hola, quiero consultar por las clases de Zumba y sus horarios." href="https://wa.me/5491172357022" target="_blank" rel="noopener">Consultar por Zumba <svg class="link-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg></a>
 </article>
 <article>
 <span>06 — A TU RITMO</span>
 <h3>Entrenamiento libre</h3>
 <p>Usá el espacio para entrenar por tu cuenta. Consultá las condiciones de acceso.</p>
-<a data-wa="Hola, quiero consultar por el entrenamiento libre, sus condiciones y horarios." href="https://wa.me/5491172357022" target="_blank" rel="noopener">Consultar por acceso libre ↗</a>
+<a data-wa="Hola, quiero consultar por el entrenamiento libre, sus condiciones y horarios." href="https://wa.me/5491172357022" target="_blank" rel="noopener">Consultar por acceso libre <svg class="link-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg></a>
 </article>
 </div>
 </section>
@@ -223,25 +227,25 @@ export const pageMarkup = String.raw`<section class="hero">
 <h3>3 meses</h3>
 <p>Precio final</p>
 <strong>$75.000</strong>
-<span class="plan-select">Elegir este plan ↗</span>
+<span class="plan-select">Elegir este plan <svg class="link-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg></span>
 </a>
 <a class="plan-option" data-wa="Hola, quiero elegir el plan de pase libre por 6 meses ($138.000). ¿Me pasan las condiciones?" href="https://wa.me/5491172357022?text=Hola%2C%20quiero%20elegir%20el%20plan%20de%20pase%20libre%20por%206%20meses%20%28%24138.000%29.%20%C2%BFMe%20pasan%20las%20condiciones%3F" target="_blank" rel="noopener">
 <span>02 — PASE LIBRE</span>
 <h3>6 meses</h3>
 <p>Precio final</p>
 <strong>$138.000</strong>
-<span class="plan-select">Elegir este plan ↗</span>
+<span class="plan-select">Elegir este plan <svg class="link-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg></span>
 </a>
 <a class="plan-option" data-wa="Hola, quiero elegir el plan de pase libre por 12 meses ($252.000). ¿Me pasan las condiciones?" href="https://wa.me/5491172357022?text=Hola%2C%20quiero%20elegir%20el%20plan%20de%20pase%20libre%20por%2012%20meses%20%28%24252.000%29.%20%C2%BFMe%20pasan%20las%20condiciones%3F" target="_blank" rel="noopener">
 <span>03 — PASE LIBRE</span>
 <h3>12 meses</h3>
 <p>Precio final</p>
 <strong>$252.000</strong>
-<span class="plan-select">Elegir este plan ↗</span>
+<span class="plan-select">Elegir este plan <svg class="link-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg></span>
 </a>
 </div>
 <p class="plan-disclaimer">No acumulable con otros descuentos. Consultá por WhatsApp las condiciones vigentes del pase libre.</p>
-<a class="button plan-contact" data-wa="Hola, quiero consultar por los planes mensuales de pase libre y sus condiciones." href="https://wa.me/5491172357022" target="_blank" rel="noopener">Consultar planes por WhatsApp <b>↗</b></a>
+<a class="button plan-contact" data-wa="Hola, quiero consultar por los planes mensuales de pase libre y sus condiciones." href="https://wa.me/5491172357022" target="_blank" rel="noopener">Consultar planes por WhatsApp <b><svg class="link-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg></b></a>
 </section>
 <section class="section light schedule" id="horarios">
 <div class="section-top">
@@ -254,7 +258,7 @@ export const pageMarkup = String.raw`<section class="hero">
 <em>para entrenar.</em>
 </h2>
 <p>Entrená durante la semana o vení a moverte el sábado. Consultá por WhatsApp la disponibilidad de las clases.</p>
-<a class="button" data-wa="Hola, ¿me pasan los días y horarios vigentes de las actividades en Valkiria?" href="https://wa.me/5491172357022?text=Hola%2C%20%C2%BFme%20pasan%20los%20d%C3%ADas%20y%20horarios%20vigentes%20de%20las%20actividades%20en%20Valkiria%3F" target="_blank" rel="noopener">Consultar disponibilidad ↗</a>
+<a class="button" data-wa="Hola, ¿me pasan los días y horarios vigentes de las actividades en Valkiria?" href="https://wa.me/5491172357022?text=Hola%2C%20%C2%BFme%20pasan%20los%20d%C3%ADas%20y%20horarios%20vigentes%20de%20las%20actividades%20en%20Valkiria%3F" target="_blank" rel="noopener">Consultar disponibilidad <svg class="link-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg></a>
 </div>
 <div>
 <p class="schedule-label">HORARIO DEL GIMNASIO</p>
@@ -296,7 +300,7 @@ export const pageMarkup = String.raw`<section class="hero">
 <h2>Tu experiencia.<br>
 <em>Tu voz.</em>
 </h2>
-<a class="navcta" href="https://maps.app.goo.gl/JWCbCD2KAuBtSAYv5" target="_blank" rel="noopener">Abrir la ficha en Google Maps ↗</a>
+<a class="navcta" href="https://maps.app.goo.gl/JWCbCD2KAuBtSAYv5" target="_blank" rel="noopener">Abrir la ficha en Google Maps <svg class="link-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg></a>
 </div>
 <p class="reviews-summary">
 <strong>4,8 / 5</strong> · 5 valoraciones en Google Maps <small>Consultado el 13/10/2026 · Actualización manual</small>
@@ -309,66 +313,66 @@ export const pageMarkup = String.raw`<section class="hero">
 <blockquote>“Me gusta el ambiente”</blockquote>
 <small>Fragmento de la reseña original</small>
 <p>veronica araujo · 24/02/2026</p>
-<a href="https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2taSVEyMHdORWd3UWtGd1ZrUktlVGMxWDFwNldFRRAB!2m1!1s0x0:0x5ffd6cb00c5bcc0f!3m1!1s2@1:CAIQACodChtycF9oOkZIQ20wNEgwQkFwVkRKeTc1X1p6WEE%7C%7C?hl=es-419" target="_blank" rel="noopener">Leer reseña completa en Google Maps ↗</a>
+<a href="https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2taSVEyMHdORWd3UWtGd1ZrUktlVGMxWDFwNldFRRAB!2m1!1s0x0:0x5ffd6cb00c5bcc0f!3m1!1s2@1:CAIQACodChtycF9oOkZIQ20wNEgwQkFwVkRKeTc1X1p6WEE%7C%7C?hl=es-419" target="_blank" rel="noopener">Leer reseña completa en Google Maps <svg class="link-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg></a>
 </article>
 <article class="review-card" role="group" aria-roledescription="diapositiva" aria-label="2 de 5">
 <p class="stars" aria-label="4 de 5 estrellas">★★★★☆</p>
 <blockquote>“Muy buena atención y ambiente, lamentablemente algunas máquinas están arruinadas.”</blockquote>
 <small>Fragmento de la reseña original</small>
 <p>Lucia Escalera · 26/09/2024</p>
-<a href="https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNub2NLeE13EAE!2m1!1s0x0:0x5ffd6cb00c5bcc0f!3m1!1s2@1:CIHM0ogKEICAgICnocKxMw%7C%7C?hl=es-419" target="_blank" rel="noopener">Leer reseña completa en Google Maps ↗</a>
+<a href="https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNub2NLeE13EAE!2m1!1s0x0:0x5ffd6cb00c5bcc0f!3m1!1s2@1:CIHM0ogKEICAgICnocKxMw%7C%7C?hl=es-419" target="_blank" rel="noopener">Leer reseña completa en Google Maps <svg class="link-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg></a>
 </article>
 <article class="review-card" role="group" aria-roledescription="diapositiva" aria-label="3 de 5">
 <p class="stars" aria-label="5 de 5 estrellas">★★★★★</p>
 <blockquote>“Lindo ambiente ,me sentí cómoda para hacer los ejercicios”</blockquote>
 <small>Fragmento de la reseña original</small>
 <p>Griselda Barbona · 22/03/2024</p>
-<a href="https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUQ5bC1LM0t3EAE!2m1!1s0x0:0x5ffd6cb00c5bcc0f!3m1!1s2@1:CIHM0ogKEICAgID9l-K3Kw%7C%7C?hl=es-419" target="_blank" rel="noopener">Leer reseña completa en Google Maps ↗</a>
+<a href="https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUQ5bC1LM0t3EAE!2m1!1s0x0:0x5ffd6cb00c5bcc0f!3m1!1s2@1:CIHM0ogKEICAgID9l-K3Kw%7C%7C?hl=es-419" target="_blank" rel="noopener">Leer reseña completa en Google Maps <svg class="link-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg></a>
 </article>
 <article class="review-card" role="group" aria-roledescription="diapositiva" aria-label="4 de 5">
 <p class="stars" aria-label="5 de 5 estrellas">★★★★★</p>
 <blockquote class="rating-only">Valoración sin comentario escrito.</blockquote>
 <p>Mayra Miramon · 29/09/2025</p>
-<a href="https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pSWWRYbzVVMlExY1dKVVdGTkxTM0p4TFRKRGFFRRAB!2m1!1s0x0:0x5ffd6cb00c5bcc0f!3m1!1s2@1:CAIQACodChtycF9oOjRYdXo5U2Q1cWJUWFNLS3JxLTJDaEE%7C%7C?hl=es-419" target="_blank" rel="noopener">Ver valoración en Google Maps ↗</a>
+<a href="https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pSWWRYbzVVMlExY1dKVVdGTkxTM0p4TFRKRGFFRRAB!2m1!1s0x0:0x5ffd6cb00c5bcc0f!3m1!1s2@1:CAIQACodChtycF9oOjRYdXo5U2Q1cWJUWFNLS3JxLTJDaEE%7C%7C?hl=es-419" target="_blank" rel="noopener">Ver valoración en Google Maps <svg class="link-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg></a>
 </article>
 <article class="review-card" role="group" aria-roledescription="diapositiva" aria-label="5 de 5">
 <p class="stars" aria-label="5 de 5 estrellas">★★★★★</p>
 <blockquote class="rating-only">Valoración sin comentario escrito.</blockquote>
 <p>Mica Rivero · 02/08/2024</p>
-<a href="https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURiaFBTRC1RRRAB!2m1!1s0x0:0x5ffd6cb00c5bcc0f!3m1!1s2@1:CIHM0ogKEICAgIDbhPSD-QE%7C%7C?hl=es-419" target="_blank" rel="noopener">Ver valoración en Google Maps ↗</a>
+<a href="https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURiaFBTRC1RRRAB!2m1!1s0x0:0x5ffd6cb00c5bcc0f!3m1!1s2@1:CIHM0ogKEICAgIDbhPSD-QE%7C%7C?hl=es-419" target="_blank" rel="noopener">Ver valoración en Google Maps <svg class="link-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg></a>
 </article>
 <article class="review-card" role="group" aria-roledescription="diapositiva" aria-label="1 de 5" aria-hidden="true" inert="">
 <p class="stars" aria-label="5 de 5 estrellas">★★★★★</p>
 <blockquote>“Me gusta el ambiente”</blockquote>
 <small>Fragmento de la reseña original</small>
 <p>veronica araujo · 24/02/2026</p>
-<a href="https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2taSVEyMHdORWd3UWtGd1ZrUktlVGMxWDFwNldFRRAB!2m1!1s0x0:0x5ffd6cb00c5bcc0f!3m1!1s2@1:CAIQACodChtycF9oOkZIQ20wNEgwQkFwVkRKeTc1X1p6WEE%7C%7C?hl=es-419" target="_blank" rel="noopener" tabindex="-1">Leer reseña completa en Google Maps ↗</a>
+<a href="https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2taSVEyMHdORWd3UWtGd1ZrUktlVGMxWDFwNldFRRAB!2m1!1s0x0:0x5ffd6cb00c5bcc0f!3m1!1s2@1:CAIQACodChtycF9oOkZIQ20wNEgwQkFwVkRKeTc1X1p6WEE%7C%7C?hl=es-419" target="_blank" rel="noopener" tabindex="-1">Leer reseña completa en Google Maps <svg class="link-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg></a>
 </article>
 <article class="review-card" role="group" aria-roledescription="diapositiva" aria-label="2 de 5" aria-hidden="true" inert="">
 <p class="stars" aria-label="4 de 5 estrellas">★★★★☆</p>
 <blockquote>“Muy buena atención y ambiente, lamentablemente algunas máquinas están arruinadas.”</blockquote>
 <small>Fragmento de la reseña original</small>
 <p>Lucia Escalera · 26/09/2024</p>
-<a href="https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNub2NLeE13EAE!2m1!1s0x0:0x5ffd6cb00c5bcc0f!3m1!1s2@1:CIHM0ogKEICAgICnocKxMw%7C%7C?hl=es-419" target="_blank" rel="noopener" tabindex="-1">Leer reseña completa en Google Maps ↗</a>
+<a href="https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNub2NLeE13EAE!2m1!1s0x0:0x5ffd6cb00c5bcc0f!3m1!1s2@1:CIHM0ogKEICAgICnocKxMw%7C%7C?hl=es-419" target="_blank" rel="noopener" tabindex="-1">Leer reseña completa en Google Maps <svg class="link-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg></a>
 </article>
 <article class="review-card" role="group" aria-roledescription="diapositiva" aria-label="3 de 5" aria-hidden="true" inert="">
 <p class="stars" aria-label="5 de 5 estrellas">★★★★★</p>
 <blockquote>“Lindo ambiente ,me sentí cómoda para hacer los ejercicios”</blockquote>
 <small>Fragmento de la reseña original</small>
 <p>Griselda Barbona · 22/03/2024</p>
-<a href="https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUQ5bC1LM0t3EAE!2m1!1s0x0:0x5ffd6cb00c5bcc0f!3m1!1s2@1:CIHM0ogKEICAgID9l-K3Kw%7C%7C?hl=es-419" target="_blank" rel="noopener" tabindex="-1">Leer reseña completa en Google Maps ↗</a>
+<a href="https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUQ5bC1LM0t3EAE!2m1!1s0x0:0x5ffd6cb00c5bcc0f!3m1!1s2@1:CIHM0ogKEICAgID9l-K3Kw%7C%7C?hl=es-419" target="_blank" rel="noopener" tabindex="-1">Leer reseña completa en Google Maps <svg class="link-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg></a>
 </article>
 <article class="review-card" role="group" aria-roledescription="diapositiva" aria-label="4 de 5" aria-hidden="true" inert="">
 <p class="stars" aria-label="5 de 5 estrellas">★★★★★</p>
 <blockquote class="rating-only">Valoración sin comentario escrito.</blockquote>
 <p>Mayra Miramon · 29/09/2025</p>
-<a href="https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pSWWRYbzVVMlExY1dKVVdGTkxTM0p4TFRKRGFFRRAB!2m1!1s0x0:0x5ffd6cb00c5bcc0f!3m1!1s2@1:CAIQACodChtycF9oOjRYdXo5U2Q1cWJUWFNLS3JxLTJDaEE%7C%7C?hl=es-419" target="_blank" rel="noopener" tabindex="-1">Ver valoración en Google Maps ↗</a>
+<a href="https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pSWWRYbzVVMlExY1dKVVdGTkxTM0p4TFRKRGFFRRAB!2m1!1s0x0:0x5ffd6cb00c5bcc0f!3m1!1s2@1:CAIQACodChtycF9oOjRYdXo5U2Q1cWJUWFNLS3JxLTJDaEE%7C%7C?hl=es-419" target="_blank" rel="noopener" tabindex="-1">Ver valoración en Google Maps <svg class="link-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg></a>
 </article>
 <article class="review-card" role="group" aria-roledescription="diapositiva" aria-label="5 de 5" aria-hidden="true" inert="">
 <p class="stars" aria-label="5 de 5 estrellas">★★★★★</p>
 <blockquote class="rating-only">Valoración sin comentario escrito.</blockquote>
 <p>Mica Rivero · 02/08/2024</p>
-<a href="https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURiaFBTRC1RRRAB!2m1!1s0x0:0x5ffd6cb00c5bcc0f!3m1!1s2@1:CIHM0ogKEICAgIDbhPSD-QE%7C%7C?hl=es-419" target="_blank" rel="noopener" tabindex="-1">Ver valoración en Google Maps ↗</a>
+<a href="https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURiaFBTRC1RRRAB!2m1!1s0x0:0x5ffd6cb00c5bcc0f!3m1!1s2@1:CIHM0ogKEICAgIDbhPSD-QE%7C%7C?hl=es-419" target="_blank" rel="noopener" tabindex="-1">Ver valoración en Google Maps <svg class="link-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg></a>
 </article>
 </div>
 <div class="carousel-bar">
@@ -432,7 +436,7 @@ export const pageMarkup = String.raw`<section class="hero">
 <textarea id="message" maxlength="500" placeholder="Por ejemplo: me gustaría conocer el gimnasio.">
 </textarea>
 <p class="note">No incluyas información médica. Estos campos no se guardan en la web: se preparan como mensaje para WhatsApp.</p>
-<button class="button" type="submit">Continuar en WhatsApp <b>↗</b>
+<button class="button" type="submit">Continuar en WhatsApp <b><svg class="link-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg></b>
 </button>
 <p id="status" role="status">
 </p>
@@ -448,13 +452,13 @@ export const pageMarkup = String.raw`<section class="hero">
 <div class="contact">
 <a href="https://maps.app.goo.gl/grCKLn7wGQ9CfPLz6" target="_blank" rel="noopener">
 <span>DIRECCIÓN</span>
-<span class="address-text">Guillermo Marconi 3254, Isidro Casanova</span>Abrir ubicación en Google Maps ↗</a>
+<span class="address-text">Guillermo Marconi 3254, Isidro Casanova</span>Abrir ubicación en Google Maps <svg class="link-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg></a>
 <a data-wa="Hola, quisiera consultar los días y horarios de Valkiria." href="https://wa.me/5491172357022?text=Hola%2C%20quisiera%20consultar%20los%20d%C3%ADas%20y%20horarios%20de%20Valkiria." target="_blank" rel="noopener">
-<span>DÍAS Y HORARIOS</span>Consultar horarios actualizados ↗</a>
+<span>DÍAS Y HORARIOS</span>Consultar horarios actualizados <svg class="link-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg></a>
 <a data-wa="Hola, quiero información sobre Valkiria." href="https://wa.me/5491172357022?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20Valkiria." target="_blank" rel="noopener">
-<span>WHATSAPP</span>011 7235-7022 ↗</a>
+<span>WHATSAPP</span>011 7235-7022 <svg class="link-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg></a>
 <a href="https://www.instagram.com/gimnasio_valkiria/" target="_blank" rel="noopener">
-<span>INSTAGRAM</span>@gimnasio_valkiria ↗</a>
+<span>INSTAGRAM</span>@gimnasio_valkiria <svg class="link-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg></a>
 </div>
 </div>
 <div class="map-panel">
@@ -462,7 +466,7 @@ export const pageMarkup = String.raw`<section class="hero">
 </iframe>
 <div class="map-caption">
 <span>Gimnasio Femenino Valkiria</span>
-<a href="https://maps.app.goo.gl/grCKLn7wGQ9CfPLz6" target="_blank" rel="noopener">Cómo llegar ↗</a>
+<a href="https://maps.app.goo.gl/grCKLn7wGQ9CfPLz6" target="_blank" rel="noopener">Cómo llegar <svg class="link-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg></a>
 </div>
 </div>
 <div class="faq">

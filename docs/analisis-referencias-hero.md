@@ -50,3 +50,9 @@ La instalación existe en esta copia del entorno. No implica que la skill aparez
 ## Siguiente implementación propuesta
 
 Mejorar únicamente el hero, verificarlo en escritorio y móvil, y recién después trasladar su lenguaje de movimiento a las demás secciones. Este documento registra una propuesta; la aplicación sigue con su diseño existente. No se publicaron estos archivos en GitHub.
+
+## Referencia adicional: Download (11).mp4
+
+Analizada el 14/10/2026 (Buenos Aires): archivo de 21,17 segundos y 576×1024. La primera parte muestra a una persona trabajando; en la segunda aparecen una portada con fotografía grande, filas de tarjetas de marcas/proyectos y bloques de portfolio que cambian con el desplazamiento. Los rótulos del video son texto de su autor, no instrucciones ni evidencia del tiempo de desarrollo.
+
+Aplicación en esta iteración: entradas de tarjetas más amplias y escalonadas, portada fotográfica y una secuencia de imágenes del gimnasio que se abre en abanico mientras cambia la frase motivacional. Se conserva el orden de secciones y la información comercial. La implementación se documenta en `animaciones-valkiria.md`.

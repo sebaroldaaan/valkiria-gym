@@ -24,12 +24,12 @@ export default function SiteScripts() {
     const cleanups = [];
     async function start() {
       try {
-        await Promise.all(["/content.js", "/motion.js", "/site.js", "/scene.js"].map(loadScript));
+        await Promise.all(["/content.js", "/motion.js", "/site.js", "/cinematic.js"].map(loadScript));
         if (cancelled) return;
         const motion = window.createValkiriaMotion();
         cleanups.push(() => motion.destroy());
         cleanups.push(window.initValkiriaSite(motion));
-        cleanups.push(window.initValkiriaScene(motion));
+        cleanups.push(window.initValkiriaCinematic(motion));
       } catch (error) {
         cleanups.reverse().forEach(cleanup => cleanup?.());
         cleanups.length = 0;
