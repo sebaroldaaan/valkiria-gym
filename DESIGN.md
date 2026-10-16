@@ -29,8 +29,9 @@ Reflejar la propuesta visual de Valkiria: un gimnasio femenino en Buenos Aires, 
 - Mantener contraste legible entre las superficies claras y oscuras.
 
 ## Tipografía
-Usar Arial/Helvetica para la interfaz y el texto general. Reservar Georgia en cursiva para énfasis editoriales.
-- Titulares: grandes, de peso medio y espaciado compacto.
+Usar Barlow Condensed Bold (700), en mayúsculas, para los títulos de portada, secciones, clases, planes y frase motivacional. Cargar la fuente local mediante `next/font/local`; conservar la licencia OFL junto al archivo.
+- Mantener Arial/Helvetica para la interfaz y el texto general. Los énfasis dentro de esos titulares heredan Barlow Condensed y se muestran sin cursiva.
+- Conservar los tamaños, colores y composición anteriores; la aprobación del usuario abarca únicamente la tipografía de la propuesta visual descartada.
 - Texto general: legible y con interlineado amplio.
 
 ## Hero

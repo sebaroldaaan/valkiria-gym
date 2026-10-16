@@ -1,0 +1,21 @@
+/* Approved typography only: preserve the existing composition and type sizes. */
+.hero-cinematic h1,
+.section h2,
+.booking h2,
+.cards > article h3,
+.plan-option h3,
+.story-copy {
+  font-family: var(--font-display), Arial, sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: -.02em;
+}
+
+.hero-cinematic h1 em,
+.section h2 em,
+.booking h2 em,
+.story-copy em {
+  font-family: inherit;
+  font-weight: inherit;
+  font-style: normal;
+}

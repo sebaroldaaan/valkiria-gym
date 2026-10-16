@@ -2,6 +2,15 @@ import "./globals.css";
 import "./brand.css";
 import "./motion.css";
 import "./cinematic.css";
+import "./typography.css";
+import localFont from "next/font/local";
+
+const displayFont = localFont({
+  src: "../public/fonts/BarlowCondensed-Bold.ttf",
+  weight: "700",
+  display: "swap",
+  variable: "--font-display",
+});
 
 export const metadata = {
   // Set SITE_URL to the public origin when the presentation is deployed.
@@ -25,7 +34,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="es">
+    <html lang="es" className={displayFont.variable}>
       <body>{children}</body>
     </html>
   );
